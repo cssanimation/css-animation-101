@@ -1,6 +1,6 @@
 # CSS Animation 101 Book
 
-![](https://github.com/cssanimation/css-animation-101/raw/master/images/cover.png)
+![](https://github.com/cssanimation/css-animation-101/raw/master/images/cover-small.png)
 
 Animation using CSS can be overwhelming to learn all at once.
 
