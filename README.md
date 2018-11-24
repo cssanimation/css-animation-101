@@ -1,4 +1,4 @@
-# CSS Animation 101 Book
+# CSS Animation 101
 
 ![](https://github.com/cssanimation/css-animation-101/raw/master/images/cover-small.png)
 
