@@ -1,0 +1,1209 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>0000-intro</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <link rel="stylesheet" href="style.css" />
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<nav id="TOC">
+<ul>
+<li><a href="#welcome">Welcome</a><ul>
+<li><a href="#hello-im-donovan">Hello, I’m Donovan</a></li>
+<li><a href="#book-structure">Book structure</a></li>
+<li><a href="#help-and-support">Help and support</a></li>
+<li><a href="#need-to-brush-up-on-your-css">Need to brush up on your CSS?</a></li>
+<li><a href="#homework">Homework</a></li>
+</ul></li>
+<li><a href="#why-animate">Why animate?</a><ul>
+<li><a href="#more-than-words-alone">More than words alone</a></li>
+<li><a href="#what-is-animation-on-the-web">What is animation on the web?</a></li>
+<li><a href="#with-great-power-comes-great-responsibility">With great power comes great responsibility</a></li>
+<li><a href="#inspiration">Inspiration</a></li>
+<li><a href="#summary">Summary</a></li>
+<li><a href="#homework-1">Homework</a></li>
+</ul></li>
+<li><a href="#creative-environments">Creative environments</a><ul>
+<li><a href="#in-the-browser">In the browser</a></li>
+<li><a href="#local-development">Local development</a></li>
+<li><a href="#in-summary">In summary</a></li>
+<li><a href="#homework-2">Homework</a></li>
+</ul></li>
+<li><a href="#transitions">Transitions</a><ul>
+<li><a href="#transitions-1">Transitions</a></li>
+<li><a href="#transition-properties">Transition properties</a></li>
+<li><a href="#in-summary-1">In summary</a></li>
+<li><a href="#homework-3">Homework</a></li>
+</ul></li>
+<li><a href="#animations">Animations</a><ul>
+<li><a href="#animation-in-the-browser">Animation in the browser</a></li>
+<li><a href="#examples">Examples</a></li>
+<li><a href="#transitions-vs.animations">Transitions vs. Animations</a></li>
+<li><a href="#homework-4">Homework</a></li>
+</ul></li>
+<li><a href="#transitions-in-action">Transitions in action</a><ul>
+<li><a href="#transitions-2">Transitions</a></li>
+<li><a href="#example-button-transition">Example: Button transition</a></li>
+<li><a href="#prefixes-and-browser-compatibility">Prefixes and browser compatibility</a></li>
+<li><a href="#homework-5">Homework</a></li>
+</ul></li>
+<li><a href="#transitions-properties">Transitions properties</a><ul>
+<li><a href="#shorthand-vs-longhand">Shorthand vs Longhand</a></li>
+<li><a href="#things-transitions-dont-work-on">Things transitions <em>don’t</em> work on</a></li>
+<li><a href="#homework-6">Homework</a></li>
+</ul></li>
+<li><a href="#timing-functions">Timing functions</a><ul>
+<li><a href="#linear">Linear</a></li>
+<li><a href="#ease-in">Ease-in</a></li>
+<li><a href="#ease-out">Ease-out</a></li>
+<li><a href="#ease-in-out">Ease-in-out</a></li>
+<li><a href="#cubic-bezier">Cubic-bezier</a></li>
+<li><a href="#steps">Steps</a></li>
+<li><a href="#more-examples">More examples</a></li>
+</ul></li>
+<li><a href="#multiple-transitions">Multiple transitions</a><ul>
+<li><a href="#example-1-fancy-button">Example 1: Fancy button</a></li>
+<li><a href="#example-2-background-reveal">Example 2: Background reveal</a></li>
+<li><a href="#multiple-transitions-on-a-single-element">Multiple transitions on a single element</a></li>
+<li><a href="#homework-7">Homework</a></li>
+</ul></li>
+<li><a href="#transitions-and-javascript">Transitions and JavaScript</a><ul>
+<li><a href="#add-or-remove-classes">Add or remove classes</a></li>
+<li><a href="#controlling-transitions-with-javascript">Controlling transitions with JavaScript</a></li>
+<li><a href="#lets-recap">Let’s recap</a></li>
+<li><a href="#homework-8">Homework</a></li>
+</ul></li>
+<li><a href="#animations-in-action">Animations in action</a><ul>
+<li><a href="#a-symbiotic-relationship">A symbiotic relationship</a></li>
+<li><a href="#the-animation-property">The <code>animation</code> property</a></li>
+<li><a href="#keyframes">Keyframes</a></li>
+<li><a href="#prefixes">Prefixes</a></li>
+<li><a href="#homework-9">Homework</a></li>
+</ul></li>
+<li><a href="#animation-properties">Animation properties</a><ul>
+<li><a href="#using-timing-functions-within-keyframes">Using timing functions within keyframes</a></li>
+<li><a href="#homework-10">Homework</a></li>
+</ul></li>
+<li><a href="#keyframes-in-action">Keyframes in action</a><ul>
+<li><a href="#things-to-look-out-for">Things to look out for</a></li>
+<li><a href="#example-save-button-wiggle-effect">Example: Save button wiggle effect</a></li>
+<li><a href="#homework-11">Homework</a></li>
+</ul></li>
+<li><a href="#multiple-animations">Multiple animations</a><ul>
+<li><a href="#traffic-lights">Traffic lights</a></li>
+<li><a href="#further-reading">Further reading</a></li>
+<li><a href="#homework-12">Homework</a></li>
+</ul></li>
+<li><a href="#animation-recap">Animation recap</a><ul>
+<li><a href="#homework-challenge-traffic-lights">Homework challenge: Traffic lights</a></li>
+<li><a href="#recap-animations">Recap: Animations</a></li>
+<li><a href="#putting-them-together">Putting them together</a></li>
+<li><a href="#homework-13">Homework</a></li>
+</ul></li>
+<li><a href="#storytelling">Storytelling</a><ul>
+<li><a href="#heroes">Heroes</a></li>
+<li><a href="#example-scrolling-background">Example: Scrolling background</a></li>
+<li><a href="#part-1-background-animation">Part 1: Background animation</a></li>
+<li><a href="#part-2-adding-the-hover-transition">Part 2: Adding the hover transition</a></li>
+<li><a href="#summary-1">Summary</a></li>
+<li><a href="#homework-14">Homework</a></li>
+</ul></li>
+<li><a href="#star-wars">Star Wars</a><ul>
+<li><a href="#transform-not-an-animation-property">Transform: Not an animation property</a></li>
+<li><a href="#transform-scale-translatez-and-rotatey">Transform: scale(), translateZ() and rotateY()</a></li>
+<li><a href="#svg-html-and-css">SVG, HTML and CSS</a></li>
+<li><a href="#animating-the-star-and-wars">Animating the Star and Wars</a></li>
+<li><a href="#making-it-3d">Making it 3D</a></li>
+<li><a href="#the-force-awakens">The Force Awakens</a></li>
+<li><a href="#homework-15">Homework</a></li>
+</ul></li>
+<li><a href="#revealing-content-on-scroll">Revealing content on scroll</a><ul>
+<li><a href="#wow.js">Wow.js</a></li>
+<li><a href="#using-wow.js">Using Wow.js</a></li>
+<li><a href="#adding-wow-classes">Adding “wow” classes</a></li>
+<li><a href="#hiding-and-showing">Hiding and showing</a></li>
+<li><a href="#using-animate.css">Using Animate.css</a></li>
+<li><a href="#using-modernizr">Using Modernizr</a></li>
+<li><a href="#homework-16">Homework</a></li>
+</ul></li>
+<li><a href="#accessibility">Accessibility</a><ul>
+<li><a href="#make-sure-content-is-accessible">Make sure content is accessible</a></li>
+<li><a href="#give-control">Give control</a></li>
+<li><a href="#allow-for-alternate-inputs">Allow for alternate inputs</a></li>
+<li><a href="#confusion">Confusion</a></li>
+<li><a href="#dont-make-me-sick">Don’t make me sick</a></li>
+<li><a href="#accessibility-is-for-everyones-benefit">Accessibility is for everyone’s benefit</a></li>
+<li><a href="#homework-17">Homework</a></li>
+</ul></li>
+<li><a href="#now-you-know-css-animation">Now you know CSS animation!</a><ul>
+<li><a href="#css-animation-cheatsheet">CSS Animation cheatsheet</a></li>
+<li><a href="#resources-to-bookmark">Resources to bookmark</a></li>
+<li><a href="#other-tools">Other tools</a></li>
+<li><a href="#next-steps">Next steps</a></li>
+<li><a href="#dont-be-a-stranger-now">Don’t be a stranger, now</a></li>
+</ul></li>
+<li><a href="#level-up-your-css-animation-skills">Level up your CSS animation skills!</a></li>
+</ul>
+</nav>
+<h1 id="welcome">Welcome</h1>
+<blockquote>
+<p>“Tell me and I forget. Teach me and I remember. Involve me and I learn.” <em>Benjamin Franklin</em></p>
+</blockquote>
+<p>Welcome to CSS Animation 101, and thank you for choosing this book.</p>
+<p>I’m delighted you’ve chosen to learn CSS animation. This book is a light and fun introduction to the topic, and I hope you find it helpful. We’re going to learn about CSS <em>transitions</em> and <em>animations</em>. By the end you’ll have a good understanding of CSS animations as well as the tools to create and experiment with our own.</p>
+<p>There will be both theory and practical examples. We’ll learn how to easily create your own working environment, and look at lots of examples of animation along the way.</p>
+<h2 id="hello-im-donovan">Hello, I’m Donovan</h2>
+<figure>
+<img src="images/donovan.jpg" alt="Donovan Hutchinson" /><figcaption>Donovan Hutchinson</figcaption>
+</figure>
+<p>I’ve been writing articles about CSS and other topics for the best part of a decade. I’ve also been designing and developing websites since the late 90’s. More recently, I’ve written for Smashing Magazine, Net Magazine, Tuts+, Adobe Inspire and more. I post random stuff at Hop.ie, and this year I’ve been writing tutorials on <a href="https://cssanimation.rocks">CSSAnimation.rocks</a>, all about advanced and useful animations in the browser.</p>
+<p>During my days I work as a designer and front-end developer, and I’m a big fan of combining UX principles with fun animations in design. In the evenings I write blogs and try to make sure I’m aware of what’s happening in the world of web design.</p>
+<p>This book is an introduction to the topic of CSS animation, but along the way we’ll cover a lot of material. The goal is to make sure we understand what the <code>transition</code> and <code>animation</code> properties are for, how they work, and see them in action.</p>
+<p>By the end of this book you should be confident enough to begin applying animation to your projects.</p>
+<h2 id="book-structure">Book structure</h2>
+<p>Here’s what we’re going to cover.</p>
+<p><strong>First:</strong> What’s animation anyway? This week we’ll look at why we animate. We’ll also introduce the <code>transition</code> and <code>animation</code> properties and some sources of inspiration.</p>
+<p><strong>Then:</strong> All about the <strong>transition</strong> property. We’ll learn how transitions work, and the properties we can control to change the movement.</p>
+<p><strong>After that:</strong> We’ll take on the <strong>animation</strong> property, and learn how to create keyframes that go beyond simple transitions.</p>
+<p><strong>Lastly:</strong> Bringing it all together. We’ll put together some advanced examples that make use of both, look into how we can make sure our work is accessible, and share some helpful CSS resources we can apply to projects, and JavaScript tools we can use for more advanced effects.</p>
+<h2 id="help-and-support">Help and support</h2>
+<p>I love to hear from you with your questions and thoughts. Feel free to drop me an email at <a href="mailto:donovan@cssanimation.rocks">donovan@cssanimation.rocks</a>, or tweet me at <span class="citation" data-cites="donovanh">[@donovanh]</span>(https://twitter.com/donovanh) at any time.</p>
+<h2 id="need-to-brush-up-on-your-css">Need to brush up on your CSS?</h2>
+<p>If you’re new to CSS, it might be worth taking time to get familiar with the concepts. You don’t need to be an expert in CSS. If you know what a property is, you’ll be fine.</p>
+<p>Some online tools and resources you might find helpful:</p>
+<ul>
+<li><a href="http://www.codeavengers.com">Interactive HTML/CSS tutorials</a></li>
+<li><a href="http://learn.shayhowe.com/html-css/">Learn to Code HTML&amp;CSS</a></li>
+</ul>
+<h2 id="homework">Homework</h2>
+<p>You’ll notice each chapter ends with a little <strong>homework</strong> section. This is entirely up to you but if you like you can use this to help with your learning. Each homework section will have a suggestion for something to try or think about. Give it a little time and you’ll find your understanding of CSS animation will be even better.</p>
+<p><strong>Ready?</strong> Let’s learn all about CSS animation!</p>
+<h1 id="why-animate">Why animate?</h1>
+<blockquote>
+<p>“Animation is about creating the illusion of life.” <em>Brad Bird</em></p>
+</blockquote>
+<p>Before we get into the technical side of CSS animation, let’s discuss <strong>why</strong> we’re animating in the first place.</p>
+<h2 id="more-than-words-alone">More than words alone</h2>
+<p>Animation can convey information efficiently, or it can be used to grab attention but in the end it’s all about communication.</p>
+<p>Movement in our designs gives us a more powerful way to communicate. It transcends verbal and written language.</p>
+<p>Subtle and appropriate animation can add appeal to our designs and credibility to our work. This happens because as humans we’re used to seeing movement all the time in the “real” world. Bringing some of that life into our work brings the two closer.</p>
+<p>As our web browsers continue to improve and better support animation, it’s becoming a more viable option than ever. In many ways animation is as important to web design as the fonts we use and layouts we create.</p>
+<h2 id="what-is-animation-on-the-web">What is animation on the web?</h2>
+<p>Animation brings us two main benefits: conveying information and grabbing attention. We can come up with many ways these benefits can help us as we build for the web.</p>
+<p>Animation can be subtle, like when the CodePen save button wiggles a little to remind us when we need to save our work:</p>
+<figure>
+<img src="images/save_button-min.gif" alt="Animated “Save” button (http://codepen.io/donovanh/pen/KwEQdQ)" /><figcaption>Animated “Save” button (http://codepen.io/donovanh/pen/KwEQdQ)</figcaption>
+</figure>
+<p>We’re very good at spotting movement. It’s something we’ve evolved to do. Adding a little animation here and there can introduce some of that “illusion of life” in a very subtle way.</p>
+<p>We can also use animation to introduce content to a page:</p>
+<figure>
+<img src="images/list_item-min.gif" alt="Animating list items (https://cssanimation.rocks/list-items/)" /><figcaption>Animating list items (https://cssanimation.rocks/list-items/)</figcaption>
+</figure>
+<p>By animating information onto the page, we give our viewers an extra piece of information that might otherwise be missing. The animation both draws attention to the new content being added and gives context to that new information. Without animation it would just suddenly appear, possibly leaving the viewer unsure of whether it was there all along.</p>
+<p>We can use animation to tell a story:</p>
+<figure>
+<img src="images/portal-min.gif" alt="Portal animation (http://hop.ie/portal/)" /><figcaption>Portal animation (http://hop.ie/portal/)</figcaption>
+</figure>
+<p>The above is based on an instructional video for the game “Portal”. However, telling stories through our content doesn’t always need to be so literal. We can add subtle movement to show how data changes in a chart, like this example from <a href="http://sprout.is">Sprout</a>:</p>
+<figure>
+<img src="images/sprout-min.gif" alt="Animated chart from Sprout" /><figcaption>Animated chart from Sprout</figcaption>
+</figure>
+<h2 id="with-great-power-comes-great-responsibility">With great power comes great responsibility</h2>
+<p>It’s easy to do too much with animation. Having too many things moving around on the page at once is distracting. It’s usually a good idea to try to do <em>less</em> animation when possible. Any movement you do add will be all the more powerful.</p>
+<p>This might mean only moving a small item on your page. Sometimes it’s ok to do <em>less</em>.</p>
+<p>Having said that, if you want to create more of a “wow” effect with larger animations, you can do so. If you do, make sure and stop when it’s time for your viewers to focus on the content. This example from Rally does just that, with lots of movement going on that stops when it’s time to read the menu content:</p>
+<figure>
+<img src="images/ribbon-min.gif" alt="National Parks from Rally Interactive" /><figcaption>National Parks from Rally Interactive</figcaption>
+</figure>
+<h2 id="inspiration">Inspiration</h2>
+<p>Animation has a long and rich history. I recently wrote a post on <a href="https://cssanimation.rocks/principles/">Principles of Animation for the Web</a>. The principles draw from Disney’s 1981 book <a href="http://en.wikipedia.org/wiki/12_basic_principles_of_animation">The Illusion of Life: Disney Animation</a>.</p>
+<p>If you want to go further, dig into the <a href="https://www.youtube.com/watch?v=loCiTO8qEMI">Animator’s Survival Kit videos</a>. YouTube is full of sources of inspiration and ideas.</p>
+<p>For loads of great examples, take some time to browse <a href="http://hoverstat.es/">Hover States</a>. This site features all sorts of interesting examples of animation from the web. <a href="https://dribbble.com/">Dribbble.com</a> is helpful also.</p>
+<p>For example, here’s a nice example from Dribbble showing <a href="https://dribbble.com/shots/1621920-Google-Material-Design-Free-AE-Project-File">Google’s Material Design principles</a>. Searching for “animation” is a great way to find inspiring ideas.</p>
+<p>I also regularly check up on what’s happening at <a href="https://codepen.io">CodePen</a>. It’s a great source of canvas and web animation examples.</p>
+<h2 id="summary">Summary</h2>
+<ul>
+<li>Animation is kind of a big deal</li>
+<li>Used right, it can be a useful and powerful tool in our designs</li>
+<li>Use it to grab attention or convey information</li>
+<li>Don’t overdo it</li>
+<li>If you want to stand out, animation can really help</li>
+</ul>
+<h2 id="homework-1">Homework</h2>
+<p>Think about your own work and how animation might help.</p>
+<p>It’s tempting to go crazy and animate all the things, but try to look for ways subtle animation might better <em>help</em> your visitors understand the content. Is there a call-to-action on your page people are missing? Is there a sudden change in your page that’s happening too suddenly, and could benefit from a smoother transition?</p>
+<p>Lastly, take a look at sites like <a href="http://hoverstat.es/">Hover States</a> and <a href="http://littlebigdetails.com/">Little Big Details</a> and <a href="https://dribbble.com/">Dribbble</a>. These sorts of sites help if you’re ever stuck for ideas.</p>
+<h1 id="creative-environments">Creative environments</h1>
+<blockquote>
+<p>“You don’t learn to walk by following rules. You learn by doing, and by falling over.” Richard Branson</p>
+</blockquote>
+<p>Today we’re going to look at ways we can build and see our CSS animations in the browser. Before we get started with the coding, it’s a good idea to have a workflow that makes it easy to get started.</p>
+<p>We’ll cover two ways of doing this: developing in the browser, and developing offline (locally).</p>
+<h2 id="in-the-browser">In the browser</h2>
+<p>The simplest way to get going for small experiments is to develop online. A site I often use is <a href="Codepen.io">CodePen</a>. Another good one is <a href="http://jsfiddle.net/">JS Fiddle</a>.</p>
+<p>For the rest of this course I’ll be using <a href="http://codepen.io">CodePen</a> for examples and it’s worth being familiar with the way it works.</p>
+<p>CodePen is a coding playground that involves an edit mode where you can make changes to HTML, CSS and JavaScript and see the results immediately. The screen is divided up into four areas. The preview content, the HTML area, CSS and JavaScript. Within each is a settings option that allows you to configure languages (Sass instead of CSS for example) and other cool stuff.</p>
+<h2 id="local-development">Local development</h2>
+<p>For more involved projects, I prefer to develop offline. There are ways to do so that can be efficient and quicker than working in the browser.</p>
+<h3 id="basic-option-simple-htmlcss">Basic option: Simple HTML/CSS</h3>
+<p>The most simple option is to create a HTML file <em>(filename.html)</em> and an associated CSS file <em>(filename.css)</em> and link the two in the HTML. This is ok, but can be slow with lots of flicking back and forth between the browser and the editor.</p>
+<p>I’ve created a set of HTML and CSS files you can copy and use to begin creating. <a href="https://github.com/cssanimation/starter/archive/master.zip">Download them here</a>.</p>
+<figure>
+<img src="images/files.jpg" alt="Starting files" /><figcaption>Starting files</figcaption>
+</figure>
+<h3 id="dreamweaver-macaw-muse-coda-sublime">Dreamweaver / Macaw / Muse / Coda / Sublime</h3>
+<p>You can of course use whatever tool you find comfortable to create web pages. All you really need is a text editor. Some other tools come with more fancy visual editing, and if that’s your preference, go for it.</p>
+<p>Personally I’d recommend trying to get to grips with the code. Understanding the way the CSS works will help when it comes to fixing issues, or creating more expressive effects that visual tools can provide.</p>
+<h3 id="gulp">Gulp</h3>
+<p>If you’re familiar with Github, Node and checking out code, you might want to set up a development enviroment on your own machine.</p>
+<p>I am a big fan of Gulp. Being Node-based, it’s very fast. Modules can be put together to process Sass into CSS, autoprefix for browser support and sync browsers so that you don’t need to keep refreshing each time you update the code.</p>
+<p>If you’ve used Grunt or other build tools, the process should be familiar.</p>
+<p>I’ve created <a href="https://github.com/cssanimation/gulp-sass-starter">a Github repo</a> to make local development faster. If you’re comfortable with using Git, go ahead and <a href="https://github.com/cssanimation/gulp-sass-starter/blob/master/README.md">follow the readme</a> for setup instructions.</p>
+<p>Do improve it if you wish and push the results back. Teamwork!</p>
+<h2 id="in-summary">In summary</h2>
+<p>As you learn CSS animation, feel free to try different ways to create your code. You might want to host it yourself, or you might prefer to use CodePen. Either is good. Make sure you can get from idea to code as smoothly as you need to.</p>
+<h2 id="homework-2">Homework</h2>
+<p>Register with <a href="http://codepen.io">CodePen</a>. Have a go adding some HTML and CSS, and see how the results change in response. It’s also a good idea to check out some of the featured CodePens on the home page, and see how it’s done.</p>
+<p><em>Optional:</em> If you want to try local development, download local starting files:</p>
+<ul>
+<li>Basic option: <a href="https://github.com/cssanimation/starter/archive/master.zip">Project starter HTML/CSS files</a></li>
+<li>Advanced: <a href="https://github.com/cssanimation/gulp-sass-starter">Gulp &amp; Sass starter</a></li>
+</ul>
+<p><strong>Next:</strong> We’ll be talking about transitions!</p>
+<h1 id="transitions">Transitions</h1>
+<p>Let’s look at the <code>transition</code> property.</p>
+<p>Browsers used to be much more simple. It wasn’t so long ago that they couldn’t render images or handle more than a handful of fonts. Then CSS gave us power over how web pages look and feel.</p>
+<p>Animation in browsers isn’t new. Flash, Canvas and other JavaScript options have given us ways to animate but more recently CSS has become a viable option.</p>
+<h2 id="transitions-1">Transitions</h2>
+<p>One way CSS lets us control animation in the browser with the <code>transition</code> property. In browser terms, a transition is an animation from one state to another.</p>
+<figure>
+<img src="images/ab.png" alt="Transitions: A to B" /><figcaption>Transitions: A to B</figcaption>
+</figure>
+<p>When we use a transition on an element we tell the browser that we want it to <em>interpolate</em>, or automatically calculate, the change between states.</p>
+<figure>
+<img src="images/ab_animated.png" alt="Animated transition from A to B (http://codepen.io/donovanh/pen/RNdxqw)" /><figcaption>Animated transition from A to B (http://codepen.io/donovanh/pen/RNdxqw)</figcaption>
+</figure>
+<p>For example we can change an element’s style on hover, apply a transition, and the browser will create a smooth animation between the element’s starting style and it’s new style.</p>
+<figure>
+<img src="images/button.png" alt="Animated button (http://codepen.io/donovanh/pen/MYQdZd)" /><figcaption>Animated button (http://codepen.io/donovanh/pen/MYQdZd)</figcaption>
+</figure>
+<h2 id="transition-properties">Transition properties</h2>
+<p>When we use a transition on an element, there are all sorts of properties that change how the transition works. We can make it slow or fast, delay it, and even control the rate of change using timing functions. We’ll delve into what these mean next week, but here’s a nice example of what happens when we combine several transitions:</p>
+<figure>
+<img src="images/winnie-min.gif" alt="Combining transitions (http://in-ni.com/)" /><figcaption>Combining transitions (http://in-ni.com/)</figcaption>
+</figure>
+<p>Another example of combined transitions:</p>
+<figure>
+<img src="images/transitions-min.gif" alt="More transitions (http://codepen.io/suez/pen/XJGOyL)" /><figcaption>More transitions (http://codepen.io/suez/pen/XJGOyL)</figcaption>
+</figure>
+<p>Soon we will discuss how to use transitions to make these sorts of movements.</p>
+<h2 id="in-summary-1">In summary</h2>
+<p>A transition is the change from one state to another. For example, when hovering over an element, its style might change. Transitions allow the change to become a smooth animation.</p>
+<h2 id="homework-3">Homework</h2>
+<p>How’s your creative environment looking? How about taking a look into the code, and looking for the <code>transition</code> property in the CSS. Can you see what it’s doing?</p>
+<p>Next time you’re browsing the web, look for examples of transitions as you navigate web pages. Look for interesting changes such as when a new element is added to a page, or you hover over a button. You’ll find the web is full of subtle animation once you start looking for it.</p>
+<p><strong>Next:</strong> An overview of the <code>animation</code> property and how it differs from <code>transition</code>.</p>
+<h1 id="animations">Animations</h1>
+<p>So far we’ve discussed why we animate, found some sources of inspiration, looked at tools and sites we might find useful for development, and learned what transitions are.</p>
+<p>Next, allow me to introduce the <code>animation</code> property.</p>
+<h2 id="animation-in-the-browser">Animation in the browser</h2>
+<p>Transitions and animations are similar. Both take the form of a CSS property, and have duration, delay and other ways of controlling how the browser creates the movement.</p>
+<p>While transitions are all about smoothing the change from state A to state B, animations are a way to describe multiple steps.</p>
+<figure>
+<img src="images/ab-min.gif" alt="Transitions: A to B" /><figcaption>Transitions: A to B</figcaption>
+</figure>
+<figure>
+<img src="images/abc.png" alt="Animations: A to B to C" /><figcaption>Animations: A to B to C</figcaption>
+</figure>
+<p>Animations are useful for more complex movement in the browser. In the above example, there are 3 states (A, B and C). A transition would only go from A to C while an animation allows us to specify what step B looks like and make sure the animation follows all three steps.</p>
+<p>Animations also behave a little differently. They can begin automatically. While a transition might require adding a class or a change of state such as hovering, animations can start when the page loads.</p>
+<p>This means that if telling a story or drawing attention to something on a page, animations can be a good choice.</p>
+<h2 id="examples">Examples</h2>
+<p>The “Save” button movement we see on Codepen is a good example of a practical animation.</p>
+<figure>
+<img src="images/save_button-min.gif" alt="Save button on CodePen (http://codepen.io/donovanh/pen/KwEQdQ)" /><figcaption>Save button on CodePen (http://codepen.io/donovanh/pen/KwEQdQ)</figcaption>
+</figure>
+<p>It does a great job helping people notice the button.</p>
+<p>The effect is made up of a series of <code>keyframes</code> that tell the browser to shake the button from left to right. We’ll dig more into keyframes in greater depth in week 3.</p>
+<p>Another example is the landing page for <a href="https://get.fabric.io/">Fabric</a>, an app building platform from Twitter. CSS Animation is used nicely here to help communicate the modular aspect of Fabric, and establish credibility at the same time:</p>
+<figure>
+<img src="images/fabric-min.gif" alt="Fabric hero image animation (https://get.fabric.io/)" /><figcaption>Fabric hero image animation (https://get.fabric.io/)</figcaption>
+</figure>
+<p>Lastly, an example from a conference teaser site I made last year. This is a CSS Mac Plus, created to show off the welcome message on <a href="http://theweb.is">theWeb.is teaser site</a>.</p>
+<figure>
+<img src="images/macplus-min.gif" alt="Mac Plus created using CSS" /><figcaption>Mac Plus created using CSS</figcaption>
+</figure>
+<p>This CSS Mac Plus is <a href="http://codepen.io/donovanh/full/HGqjp/">available on CodePen</a> and here’s a <a href="https://cssanimation.rocks/macplus/">step-by-step guide</a> to building it.</p>
+<h2 id="transitions-vs.animations">Transitions vs. Animations</h2>
+<p>Transitions are when the browser animates from one state to another (A to B). They’re usually triggered by an action such hovering over an element, or adding or removing a class using JavaScript.</p>
+<p>Animations are more involved, and let you create sequences of animations with as many keyframes as you need along the way. They trigger automatically, and can loop.</p>
+<figure>
+<img src="images/transitions-animations-min.gif" alt="Transition vs Animation (https://cssanimation.rocks/transition-vs-animation/)" /><figcaption>Transition vs Animation (https://cssanimation.rocks/transition-vs-animation/)</figcaption>
+</figure>
+<p>We’ll take some time to work on the animation property soon. In the meantime, do look out for interesting uses of animations online, and <a href="mailto:donovan@cssanimation.rocks">let me know</a> if you find a good one!</p>
+<h2 id="homework-4">Homework</h2>
+<p>Can you think of ways animations might be used on your web pages? Keep an eye open for animation when browsing. Look out for when something moves in a way that calls attention to itself. In these cases it’s usually an animation.</p>
+<p>If you’ve downloaded the starter HTML and CSS, take a look for the <code>animation</code> property. Unlike transitions, animations need a second part, called <code>keyframes</code>. Try changing some values and see what happens.</p>
+<h1 id="transitions-in-action">Transitions in action</h1>
+<p>Now that we have introduced the <code>transition</code> and <code>animation</code> properties, it’s time to delve further into transitions and see some code!</p>
+<h2 id="transitions-2">Transitions</h2>
+<p>Transitions take place in the browser when an element changes from one state to another. The browser draws the frames between each state automatically to create movement.</p>
+<p>A <code>transition</code> is a property in CSS. Just as you’d give an element a height, width, or border, we give elements transitions too.</p>
+<p>We can write a transition in CSS like this:</p>
+<pre><code>transition: background 0.5s linear;</code></pre>
+<p>In this case we’re telling the browser that a transition of the background property, will take half a second, and use the “linear” timing function.</p>
+<p>The above property might cause a button’s background to change when hovered over:</p>
+<pre><code>button {
+  background: white;
+  transition: background 0.5s linear;
+}
+
+button:hover {
+  background: green;
+}</code></pre>
+<p>Notice the <code>transition</code> property to the first <code>button</code> reference in the CSS state. This tells the browser to apply a transition to any change of state such as on hover as well as when changing back <em>from</em> the hover state.</p>
+<p>If we applied the transition property to the hover state only, it would only transition <em>to</em> the hover state but not back.</p>
+<p>Let’s see how this looks in action. I’ve set up a couple of demos. You might find these examples contain some code that isn’t obvious. I’ll be going into greater detail over the next few days, but do feel free to poke around at the values to see what happens.</p>
+<h2 id="example-button-transition">Example: Button transition</h2>
+<p><img src="images/button-min.gif" /></p>
+<p><a href="http://codepen.io/donovanh/pen/MYQdZd">Here’s a CodePen</a> demonstrating the hover effect. In CodePen, you can make changes to the HTML and CSS and see the results immediately.</p>
+<p>The important thing to look for is the any property beginning <code>transition-</code>. I’ve written them out long-hand for demonstration like so:</p>
+<pre><code>transition-property: all;
+transition-duration: 0.4s;
+transition-timing-function: ease-out;</code></pre>
+<p>This code that tells the browser what sort of movement to generate between the non-hover state and the hover state. It tells the browser to animate <em>all</em> properties (colours, size, position), over a duration of 0.4 seconds.</p>
+<p>Try changing some of these values. For example, change the “0.4s” to something longer, like “2s” (two seconds). How does the animation feel? You could change the property from “all” to “background”.</p>
+<p>For a fun effect, try changing the <code>transition-timing-function</code> value from <code>ease-out</code> to:</p>
+<pre><code>transition-timing-function: cubic-bezier(.59,-0.26,.33,1.42)</code></pre>
+<p>The cubic bezier timing function is a lot of fun. We’ll cover timing functions in more detail on another day.</p>
+<h2 id="prefixes-and-browser-compatibility">Prefixes and browser compatibility</h2>
+<p>When I’ve given code examples, I’ve not included vendor prefixes. This is to make the code easier to read, but if you’re using the code in production they are needed.</p>
+<p>I like to use Autoprefixer (it’s an option on Codepen, press the settings “cog” icon in the CSS section), and can be run with build tools such as Grunt or Gulp. Alternately you can manually write them out like this:</p>
+<pre><code>-webkit-transition: ...;
+-moz-transition: ...;
+transition: ...;</code></pre>
+<h2 id="homework-5">Homework</h2>
+<p>Edit the button in today’s example and add your own ideas. You could try changing the shape, border, or almost any property. Have some fun, the goal is to make sure you’re familiar with how a transition affects the element’s hover effect.</p>
+<p>For some inspiration check out this <a href="http://codepen.io/nxtonic/pen/gbZNKJ">awesome hover style</a>. There are loads of great examples around if you are looking for ideas.</p>
+<p>If you want to go further, try creating a new CodePen with an element that changes from one thing to another on hover. See if you can have an element within it move at a different rate. Don’t worry if you haven’t got to this point yet, we’ll cover the properties in more detail.</p>
+<h1 id="transitions-properties">Transitions properties</h1>
+<p>Now that we have seen the <code>transition</code> property in action, let’s look at the properties that go into transitions and what they mean.</p>
+<h2 id="shorthand-vs-longhand">Shorthand vs Longhand</h2>
+<p>When writing CSS, we can often summarise multiple properties into one in a shorthand property. For example, padding written as shorthand might look like this:</p>
+<pre><code>padding: 10px 20px 15px 25px;</code></pre>
+<p>This would be the equivalent of:</p>
+<pre><code>padding-top: 10px;
+padding-right: 20px;
+padding-bottom: 15px;
+padding-left: 25px;</code></pre>
+<p>In the same way, we can write a transition as shorthand too:</p>
+<pre><code>transition: all 0.5s 1s linear;</code></pre>
+<p>In this case, the shorthand corresponds to:</p>
+<pre><code>transition: [property] [duration] [delay] [timing-function];</code></pre>
+<p>Each of these properties can be written individually:</p>
+<pre><code>transition-property: all;
+transition-duration: 0.5s;
+transition-delay: 1s;
+transition-timing-function: linear;</code></pre>
+<p>Let’s look at each of these properties.</p>
+<h3 id="transition-property">transition-property</h3>
+<p>Usually stated first in the shorthand, this is the property that the browser will animate. To change the background for example, <code>background</code> could be used. It’s also possible to use <code>all</code> to have all applicable CSS properties transition.</p>
+<h3 id="transition-duration">transition-duration</h3>
+<p>A <code>transition-duration</code> value tells the browser how long the transition will take. A transition-duration of 3s (three seconds) will be three times longer than a transition-duration of 1000ms.</p>
+<h3 id="transition-delay">transition-delay</h3>
+<p>The <code>transition-delay</code> property tells the browser to wait before applying the transition. This is a time value, and it can be specified in seconds or milliseconds. For example, <code>3s</code> would be three seconds and <code>100ms</code> would be one hundred milliseconds. Equally, you could write that as <code>0.1s</code>. It’s up to you.</p>
+<h3 id="transition-timing-function">transition-timing-function</h3>
+<p>Both transitions and animations make use of timing functions. There’s a lot to these, so rather then try to cram it in here, we’ll talk more about timing functions tomorrow. Timing functions can really add life to your animations.</p>
+<h2 id="things-transitions-dont-work-on">Things transitions <em>don’t</em> work on</h2>
+<p>While you can use transitions on positioning, size, colour, border, background-position and many others, there are some that cannot be transitioned. The font-family cannot be transitioned, as this would mean trying to generate frames between two very different font images.</p>
+<p>Background images created with CSS, such as generated gradients, cannot have their properties animated. This would mean the browser recreating the background image with each frame of animation, so it’s not supported.</p>
+<p>However you <em>can</em> animate things like opacity and background position. By moving background images around or hiding them you can create interesting effects.</p>
+<p>See it in action on this <a href="http://cssanimation.rocks/baymax/">Baymax example</a> where a background image is moved to create the animation.</p>
+<figure>
+<img src="images/baymax-min.gif" alt="Source: http://cssanimation.rocks/baymax/" /><figcaption>Source: http://cssanimation.rocks/baymax/</figcaption>
+</figure>
+<p>A similar effect is used on this <a href="https://cssanimation.rocks/pseudo-elements/">button sheen effect</a>, where the background gradient is animated across the front of a button.</p>
+<figure>
+<img src="images/sheen-min.gif" alt="Source: https://cssanimation.rocks/pseudo-elements/" /><figcaption>Source: https://cssanimation.rocks/pseudo-elements/</figcaption>
+</figure>
+<h2 id="homework-6">Homework</h2>
+<p>I’ve created <a href="http://codepen.io/donovanh/pen/NPYNGa?editors=110">a basic Codepen</a> to try out transitions.</p>
+<p>At the moment it’s set up to transition from a diamond shape into a circle. Try changing some of the attributes, to see what happens.</p>
+<p>If you’d like to go further, press the “Fork” button to create your own version and you can then save your work to your own Codepen account.</p>
+<h1 id="timing-functions">Timing functions</h1>
+<p>The timing function is a description of the rate at which the speed of the transition changes. Animations look lifeless when they occur at a fixed, linear pace. Using timing functions can make transitions more life-like.</p>
+<p>For example in this first image the transition uses a <code>linear</code> timing function:</p>
+<figure>
+<img src="images/linear-min.gif" alt="Linear transition" /><figcaption>Linear transition</figcaption>
+</figure>
+<p>For this example we’re using customised <code>cubic-bezier</code> timing function:</p>
+<figure>
+<img src="images/demo-min.gif" alt="Cubic-bezier timing function" /><figcaption>Cubic-bezier timing function</figcaption>
+</figure>
+<p>The <code>cubic-bezier</code> approach in this case tells the animation to rock back a little before quickly moving to the second state, and actually goes a little past it before correcting back.</p>
+<p>The CSS for the beginning and hover state of each example is the same, all that’s changed is the timing function.</p>
+<p>Let’s go through each and learn how they impact the way our elements move.</p>
+<p>If you’d like to play with these in an example, I’ve set up <a href="http://codepen.io/donovanh/pen/GgaRNv">a CodePen here</a>.</p>
+<h2 id="linear">Linear</h2>
+<figure>
+<img src="images/linear-example-min.gif" alt="Linear" /><figcaption>Linear</figcaption>
+</figure>
+<p>A linear transition moves at a steady rate from beginning to end. Since there’s no curve in the transition, it never accelerates or decelerates. This can be useful if making animations that need a steady movement, like the scenery moving past the background of a train window or a steadily rotating moon.</p>
+<h2 id="ease-in">Ease-in</h2>
+<figure>
+<img src="images/ease-in-min.gif" alt="Ease-in" /><figcaption>Ease-in</figcaption>
+</figure>
+<p>The ease-in timing function begins slowly and accelerates toward the end of the transition. It would be similar to a ball beginning to roll down a hill, finishing at the fastest speed at the bottom. Or perhaps a bored fish swimming left and right.</p>
+<h2 id="ease-out">Ease-out</h2>
+<figure>
+<img src="images/ease-out-min.gif" alt="Ease-out" /><figcaption>Ease-out</figcaption>
+</figure>
+<p>Ease-out is the opposite of ease-in. It starts fast and slows down toward the end of the transition. Useful for when something needs to appear as if it was rushing from off-screen and slowing down to stop.</p>
+<h2 id="ease-in-out">Ease-in-out</h2>
+<figure>
+<img src="images/ease-in-out-min.gif" alt="Ease-in-out" /><figcaption>Ease-in-out</figcaption>
+</figure>
+<p>Ease-in-out is a combination of both the ease-in and ease-out functions. It begins slowly, accelerates through the middle part of the transition, then slows toward the end. It could illustrate a car starting from a standstill, accelerating, then slowing down before stopping. If making a loading animation, something like this can look pretty good.</p>
+<h2 id="cubic-bezier">Cubic-bezier</h2>
+<figure>
+<img src="images/cubic-bezier-min.gif" alt="Cubic-bezier (custom)" /><figcaption>Cubic-bezier (custom)</figcaption>
+</figure>
+<p>All the timing functions we’ve seen so far are examples of cubic bezier curve. This is a curve that describes the “shape” of the timing function.</p>
+<p>In this way, specifying a <code>cubic-bezier</code> timing function is like creating a timing function of our own.</p>
+<p>They consist of 4 values, representing two co-ordinates. A cubic-bezier can look like this:</p>
+<pre><code>transition-timing-function: cubic-bezier(1,-0.49,.13,1.09);</code></pre>
+<p>The two co-ordinates here are (1, -0.49) and (.13, 1.09). On a graph, they look like this:</p>
+<figure>
+<img src="images/cubic-bezier-graph.png" alt="Source: http://cubic-bezier.com/#1,-0.49,.13,1.09" /><figcaption>Source: http://cubic-bezier.com/#1,-0.49,.13,1.09</figcaption>
+</figure>
+<p>Rather than create these by hand, I use <a href="http://cubic-bezier.com">cubic-bezier.com</a>. It’s a great way to create some interesting effects.</p>
+<p>They really get fun when using values greater than 1. It’s possible to create transitions that overshoot, and bounce back.</p>
+<h2 id="steps">Steps</h2>
+<figure>
+<img src="images/steps-min.gif" alt="Steps" /><figcaption>Steps</figcaption>
+</figure>
+<p>Where most of the timing functions involve curves, the steps function divides the transition into a set of steps and jumps between each. For example, if you specify <code>steps(4)</code> the transition divides the duration into 4 discrete jumps (pictured above).</p>
+<p><img src="images/steps.png" /></p>
+<p>This is useful for sprite animation. For example, a loading spinner or animated video game character. By setting the background position at the beginning of a series of frames, the steps timing function can then be used to jump through each frame and create the appearance of movement.</p>
+<p>To see a good example of this in action, check out the <a href="https://cssanimation.rocks/twitter-fave/">Twitter fave button</a> animation.</p>
+<p>You can also specify whether the transition holds the first frame for the fragment of the duration or whether it holds the final frame. The default is <code>end</code>, as this assumes that the first frame in the sprite is already showing before the animation begins.</p>
+<p>We can specify which applies when setting the steps:</p>
+<pre><code>transition: all 2s steps(10, start);
+transition: all 2s steps(10, end);</code></pre>
+<h2 id="more-examples">More examples</h2>
+<p>I’ve written on the subject of <a href="https://medium.com/css-tutorials/bouncy-transitions-c0c8085d489">timing functions here</a> if you’d like to read more and see other examples.</p>
+## Homework
+</h2>
+<p>Following on from <a href="http://codepen.io/donovanh/pen/NPYNGa?editors=110">the previous homework example</a> try changing the <code>transition-timing-function</code> value and see how it changes the way the transition feels.</p>
+<p>You can also try changing values on <a href="http://codepen.io/donovanh/pen/GgaRNv">this demo</a>. Technically it’s an animation rather than a transition, but the timing function applies in the same way.</p>
+<h1 id="multiple-transitions">Multiple transitions</h1>
+<p>So far we’ve covered how a transition creates the movement between one state and another. Next we’ll see what happens when we apply a single transition to an element with multiple changes, and how to use multiple transitions together to subtly improve our animation.</p>
+<h2 id="example-1-fancy-button">Example 1: Fancy button</h2>
+<p>While we’ve seen a simple button hover effect already, we can combine multiple transitions into a single button for a more interesting effect.</p>
+<figure>
+<img src="images/multiple-button-min.gif" alt="Source: http://codepen.io/donovanh/pen/YPMGpJ" /><figcaption>Source: http://codepen.io/donovanh/pen/YPMGpJ</figcaption>
+</figure>
+<p>In <a href="http://codepen.io/donovanh/pen/YPMGpJ">this example</a> a hover effect combines several changes of state, but all are defined by a single transition:</p>
+<pre><code>transition: transform 0.4s cubic-bezier(.72,-0.61,.25,1.51);</code></pre>
+<p>Here’s how it works. The button is made up of two icons and two pieces of text. The initial (non-hover) state is that the “Follow me” text and Twitter icon are positioned inside the button. I position the @ symbol and the “cssanimation” text outside the button like so:</p>
+<p><img src="images/button-element-positioning.png" /></p>
+<p>Then I add a hover state, in which the elements outside the button are positioned inside the button, like so:</p>
+<p><img src="images/button-element-positioning2.png" /></p>
+<p>I do this using CSS transforms. For example, the Twitter symbol is positioned using absolute positioning. When setting it up I positioned it where I wanted using <code>left</code> and <code>top</code> values:</p>
+<pre><code>.icon {
+  position: absolute;
+  left: 0.75em;
+  top: 0.75em;
+}</code></pre>
+<p>Then I add a hover state for the button and position the Twitter icon outside the button with a transform:</p>
+<pre><code>a:hover .icon {
+  transform: translateY(3em);
+}</code></pre>
+<p>Adding <code>overflow: hidden</code> to the container means that elements outside the button won’t show.</p>
+<p>With no transition in place, the icon would suddenly disappear. Since each of these elements inside the button is a span, I can apply the transition to them all at once:</p>
+<pre><code>span {
+  transition: transform 0.4s cubic-bezier(.72,-0.61,.25,1.51);
+}</code></pre>
+<p>This now means that any <code>span</code> elements will be transitioned if their state changes, such as on hover. The same trick is applied to the other parts of the button.</p>
+<p>You can <a href="http://codepen.io/donovanh/pen/YPMGpJ">see this example in full on CodePen</a>.</p>
+<h2 id="example-2-background-reveal">Example 2: Background reveal</h2>
+<p>In this example I’ve set up a card containing some text, and show the text on hover.</p>
+<figure>
+<img src="images/cat-min.gif" alt="Source: http://codepen.io/donovanh/pen/LEvjJg" /><figcaption>Source: http://codepen.io/donovanh/pen/LEvjJg</figcaption>
+</figure>
+<p>The initial (non-hover) state of the card has the title showing but the paragraph text has an <code>opacity</code> of zero. On hover, we change that to 1 to show the text, and change the height of the text container.</p>
+<p>Without transitions, it <a href="http://codepen.io/donovanh/pen/PwgKLw?editors=110">looks like this</a>. When we hover over the card the change is sudden.</p>
+<p>With the addition two transitions to change the mood entirely. <a href="http://codepen.io/donovanh/pen/LEvjJg">Here’s the result</a>.</p>
+<p>The first transition (written short-hand this time) looks like this:</p>
+<pre><code>transition: all 0.5s cubic-bezier(.48,-0.28,.41,1.4);</code></pre>
+<p>This tells the browser to animate all properties over a duration of 0.5 seconds and uses the <code>cubic-bezier</code> transition to give it some bounce. It affects the height of the text container in this case.</p>
+<p>The second transition makes the text move. Here a <code>ease-out</code> timing function is used:</p>
+<pre><code>transition: all 0.4s ease-out;</code></pre>
+<p>There’s a lot that we can achieve by changing states on hover. In this example the <code>info</code> div’s height and the paragraph are both give new values within the <code>.card:hover</code> state.</p>
+<p>In this example we use two transitions so that each of the moving parts moves in a different way. Having elements move at different paces can really help add appeal to a transition.</p>
+<p>You can also <a href="http://codepen.io/donovanh/pen/LEvjJg">see this example on CodePen</a>.</p>
+<h2 id="multiple-transitions-on-a-single-element">Multiple transitions on a single element</h2>
+<p>As well as using multiple transitions on multiple elements, we can also use more than one transition on a single element.</p>
+<p>A case for this is when you need an element’s background to change separately from it’s border. Applying a single transition to all properties might be too crude for both.</p>
+<p>We can achieve this by combining multiple transitions into a single declaration. Multiple transitions are separated by commas.</p>
+<p>For example:</p>
+<pre><code>transition: background 1s ease-out, border 0.5s linear;</code></pre>
+<p>The first transition here works on only the background, and the second (after the comma) only applies to the border. This means that a hover state that changes the background would take 1 second and the transition of the border would take 0.5 seconds.</p>
+<h2 id="homework-7">Homework</h2>
+<p>In this chapter we looked at how multiple effects could be handled by a single transition, and how multiple transitions can be used together. It’s worth take a look at the CodePen examples for each:</p>
+<ul>
+<li>Example 1: <a href="http://codepen.io/donovanh/pen/YPMGpJ">Fancy button</a></li>
+<li>Example 2: <a href="http://codepen.io/donovanh/pen/LEvjJg">Cat Hover card</a></li>
+</ul>
+<p>Can you think of ways these sorts of transitions might help in a project you’re currently working on?</p>
+<p>We’ve covered a lot so far. Next we’ll take a look at how we can apply these transitions using JavaScript.</p>
+<h1 id="transitions-and-javascript">Transitions and JavaScript</h1>
+<p>So far we’ve been using the <code>transition</code> property in CSS to animate between two states, a non-hover and a hover (or focus) state.</p>
+<p>These transitions have required hovering over the element. This isn’t the only way we can trigger animations, so today we’ll cover two ways we can use JavaScript to achieve the same result.</p>
+<h2 id="add-or-remove-classes">Add or remove classes</h2>
+<p>Since the power of transitions is to animate between two states, we can create those states as separate classes. Then we add or remove these classes using JavaScript.</p>
+<figure>
+<img src="images/js-triggered-button-min.gif" alt="Source: http://codepen.io/donovanh/pen/YPbxqa" /><figcaption>Source: http://codepen.io/donovanh/pen/YPbxqa</figcaption>
+</figure>
+<p>This example consists of a button and a content <code>div</code>. Initially the content container has the class <code>hide</code>. In the CSS, the <code>hide</code> class gives it an <code>opacity</code> of 0.</p>
+<p>We also have a second class in the CSS called <code>show</code>. This class has an opacity of 1.</p>
+<p>When the button is clicked, we toggle the class of the <code>div</code> between <code>hide</code> and <code>show</code>. To give it animation, we apply a <code>transition</code> to the <code>div</code> also.</p>
+<p>See it in action <a href="http://codepen.io/donovanh/pen/YPbxqa">on this CodePen</a>.</p>
+<p>If you’d like to read more, you might enjoy the article, <a href="http://webdesign.tutsplus.com/tutorials/adding-appeal-to-your-animations-on-the-web--cms-23649">Adding Appeal to Your Animations on the Web</a>.</p>
+<p>Toward the end of this course we’ll look into how we can trigger transitions and animations on scroll.</p>
+<h2 id="controlling-transitions-with-javascript">Controlling transitions with JavaScript</h2>
+<p>We can go further than adding or removing classes. Using JavaScript we can set the CSS properties directly like so:</p>
+<pre><code>element.style.transition = &#39;opacity 1s ease-out&#39;;</code></pre>
+<p>In this case, “element” is an element we’ve selected. For example, if an element has the ID “js-show”, you could apply a transition to it using <code>getElementById</code>:</p>
+<pre><code>document.getElementById(&#39;js-show&#39;).style.transition = &#39;opacity 1s ease-out&#39;;</code></pre>
+<p>When we do this, we must remember to include <em>vendor prefixes</em> too. The above would need to be written:</p>
+<pre><code>document.getElementById(&#39;js-show&#39;).style.webkitTransition = &#39;opacity 1s ease-out&#39;;
+document.getElementById(&#39;js-show&#39;).style.transition = &#39;opacity 1s ease-out&#39;;</code></pre>
+<p>Here the <code>webkitTransition</code> applies to any browsers that would otherwise use the <code>-webkit-</code> prefix in CSS.</p>
+<h2 id="lets-recap">Let’s recap</h2>
+<p>In this chapter we’ve covered the <code>transition</code> property. We learned we can use this property to tell a browser to animate from one state to another.</p>
+<p><img src="images/ab.png" /></p>
+<p>Along the way we’ve learned about the various properties: duration, delay, and timing functions.</p>
+<p>Putting these together we can create interesting combinations of effects, and even apply multiple transitions to a single element.</p>
+<p>Finally, we wrapped it up today by covering how to apply these transitions using JavaScript.</p>
+<p>Transitions are but one part of the CSS Animation puzzle. Next we’ll cover the <code>animation</code> property.</p>
+<h2 id="homework-8">Homework</h2>
+<p>Before we start looking at the <code>animation</code> property, take some time to think about how you use transitions.</p>
+<p>Can you think of ways they could help smooth the interactions or state changes on your pages? How might they add appeal?</p>
+<h1 id="animations-in-action">Animations in action</h1>
+<p>Now that we’ve looked at the <code>transition</code> property, let’s take a deeper look at the <code>animation</code> property.</p>
+<p><img src="images/abc.png" /></p>
+<h2 id="a-symbiotic-relationship">A symbiotic relationship</h2>
+<p>The <code>animation</code> property is applied to an element just like a <code>transition</code>. It also needs a second part, called <code>keyframes</code>.</p>
+<pre><code>.element {
+  animation: ...
+}
+
+@keyframes animation-name {
+  /* Keyframes go here */
+}</code></pre>
+<p>One benefit of having the <code>keyframes</code> defined separately is that it allows us to create animations that can be reused multiple times.</p>
+<h2 id="the-animation-property">The <code>animation</code> property</h2>
+<p>Applying these keyframes to an element is done with the <code>animation</code> property. It is quite similar to <code>transition</code> but with some extra properties. An <code>animation</code> could be written as the following shorthand:</p>
+<pre><code>animation: change-background 4s linear infinite;</code></pre>
+<p>Written as individual properties it would look like:</p>
+<pre><code>animation-name: change-background;
+animation-duration: 4s;
+animation-timing-function: linear;
+animation-repeat: infinite;</code></pre>
+<p>Where a <code>transition</code> takes a <code>property</code>, such as “background” or “all”, the <code>animation</code> property is given the name of the set of <code>keyframes</code> that describe the animation sequence.</p>
+<p>Animations have some properties that transitions don’t. For example, we can tell the animation to alternate back and forth rather than looping from the beginning each time.</p>
+<h2 id="keyframes">Keyframes</h2>
+<p>A set of <code>keyframes</code> in CSS is a series of stops along the way through an animation. Each “keyframe” is a written as a percentage.</p>
+<p>I find it helps to describe this using an example. Let’s start with a <code>div</code> on a web page that changes background over time. It begins with a blue background, changes to an orange background and then finally green.</p>
+<p><img src="images/change-background-min.gif" /></p>
+<p>If we tried to explain to someone how these background colours changed over time, we might say something like:</p>
+<p><em>“Start with a blue background, then orange background halfway through and finish with a green background”</em></p>
+<p>Or, if we wanted to be more precise, we could use percentages to explain the timing:</p>
+<p><em>“Start at 0% of the way through with a blue background, then by 50% through be orange, and at 100% have a green background”</em></p>
+<p>We could then summarise this as:</p>
+<pre><code>0% Blue
+50% Green
+100% Orange</code></pre>
+<p>With these percentages we’ve created a series of “waypoints” that an animation might pass through. All we need to do now is tell the browser that these percentages are in fact <code>keyframes</code> and give the animation a name. The result is this:</p>
+<pre><code>@keyframes change-background {
+  0% {
+    background: blue;
+  }
+  50% {
+    background: orange;
+  }
+  100% {
+    background: green;
+  }
+}</code></pre>
+<p>The animation is called “change-background”. We’ll use that later when applying the keyframes to an element.</p>
+<p>As you read the code from the top down, the percentages are describing how far through the animation each of these keyframes takes place. We can see it in action here:</p>
+<figure>
+<img src="images/simple-keyframes-min.gif" alt="Source: http://codepen.io/donovanh/pen/WbqNwd?editors=110" /><figcaption>Source: http://codepen.io/donovanh/pen/WbqNwd?editors=110</figcaption>
+</figure>
+<p>As the animation takes place, the browser creates the in-between frames needed to go from each of the background colours to the next. By telling the browser that we wanted the div to begin one colour, be another one half way through and finish on a third, the browser can do the work of creating the animation between each of these points.</p>
+<p>I’ve put together <a href="http://codepen.io/donovanh/pen/WbqNwd?editors=110">a CodePen example</a> showing this in action.</p>
+<p>Earlier, I mentioned using the <code>animation-direction</code> property to have an animation alternate. Here’s how it would look:</p>
+<p><img src="images/simple-keyframes-alternating-min.gif" /></p>
+<p>In this case I’ve changed the animation-direction property to <code>alternate</code>. See it <a href="http://codepen.io/donovanh/pen/NPZqej">on CodePen here</a>.</p>
+<h2 id="prefixes">Prefixes</h2>
+<p>For the moment it’s still necessary to use the <code>-webkit-</code> prefix on the <code>animation</code> property. I won’t add it to examples, but it will be needed for your animations to work in browsers such as Safari.</p>
+<p>In CodePen you can use the “Autoprefixer” option within the CSS settings. For local development, I use the Gulp version of Autoprefixer. <a href="http://leaverou.github.io/prefixfree/">Prefix Free</a> is a decent alternative also.</p>
+<h2 id="homework-9">Homework</h2>
+<p>Open up <a href="http://codepen.io/donovanh/pen/WbqNwd?editors=110">this keyframes example</a> and try changing the code. See if you can break it, and fix it. Even better, if you come up with something cool, let me know!</p>
+<p>I love seeing how you’re getting on. You can <a href="mailto:donovan@cssanimation.rocks">email me</a> or get in touch <a href="https://twitter.com/donovanh">on Twitter</a>.</p>
+<h1 id="animation-properties">Animation properties</h1>
+<p>Before we work on more animation examples, let’s take a look at each of the <code>animation</code> properties.</p>
+<p>Like the <code>transition</code> property, the <code>animation</code> property can be written using shorthand, or any of these properties can be specified individually.</p>
+<h3 id="animation-delay">animation-delay</h3>
+<p>Similar to <code>transition-delay</code>, we can use this property to make the animation wait before starting. This can be particularly useful in situations where there are multiple animations taking place.</p>
+<p>If the animation loops, the delay does not apply each time it loops. The delay only applies to when the animation is applied to the element.</p>
+<p>It’s actually possible to give this property a negative value, such as <code>-1s</code>. This would cause the animation to start as if a second has already elapsed.</p>
+<h3 id="animation-direction">animation-direction</h3>
+<p>Animations normally begin at 0% and finish at 100%. Using <code>animation-direction</code> we use the values <code>normal</code>, <code>reverse</code>, <code>alternate</code> and <code>alternate-reverse</code> to control the direction.</p>
+<p>“Reverse” causes it to play (and loop) from 100% to 0%, while “alternate” plays from 0% to 100% and back again to 0%.</p>
+<h3 id="animation-duration">animation-duration</h3>
+<p>This is the length of the animation. Similar to <code>transition-duration</code>, this takes a value such as <code>1s</code> for one second or <code>200ms</code> for two hundred milliseconds.</p>
+<h3 id="animation-fill-mode">animation-fill-mode</h3>
+<p>By default, an animation will play and then the element returns to its normal state. Using <code>animation-fill-mode</code> we can have the animation “stick” at either the end or beginning state.</p>
+<p>Using the value <code>forwards</code> tells the animation to finish and stay on the last keyframe. The value <code>backwards</code> returns to the first keyframe when the animation finishes.</p>
+<p>An example of this is the <a href="http://hop.ie/">bouncer animation on Hop.ie</a>. The animation plays once and finishes on the last frame. This is using the value <code>forwards</code>.</p>
+<h3 id="animation-iteration-count">animation-iteration-count</h3>
+<p>This is the number of times the animation plays. By default it will play once. You can specify a number, or “infinite” to have it loop forever.</p>
+<h3 id="animation-name">animation-name</h3>
+<p>The <code>animation-name</code> refers to the <code>keyframes</code> associated with the animation. For example, if the <code>animation-name</code> is set to “foo”, it would use a set of keyframes like:</p>
+<pre><code>@keyframes foo {
+  ...
+}</code></pre>
+<h3 id="animation-play-state">animation-play-state</h3>
+<p>If you ever need to pause or resume an animation, this property lets you do so. It takes the values of <code>running</code> or <code>paused</code>, with the default being <code>running</code>. One idea might be to set this value on an animation using JavaScript.</p>
+<h3 id="animation-timing-function">animation-timing-function</h3>
+<p>This takes the same values the timing function property in transitions, but behaves a little differently. While a timing function, such as <code>ease-out</code> applies to the entire transition, the timing function of an animation applies between each keyframe.</p>
+<p>This means that the following keyframes would see the animation starting fast and slowing toward 50%, then picking up fast and slowing down before 100%.</p>
+<pre><code>@keyframes foo {
+  0% {
+    /* Animation starts fast and ease-out makes it slow down before 50% */
+  }
+  50% {
+    /* Again, starts fast and slows toward 100% */
+  }
+  100% {
+    /* fin */
+  }
+}</code></pre>
+<p>This can be tricky to work with. Often when creating keyframe animations I’ll choose the <code>linear</code> timing function and handle the way the animation is paced using <code>keyframes</code>.</p>
+<p>Having said that, <code>cubic-bezier</code> timing functions can create some great effects when used with animations, so have a go.</p>
+<h2 id="using-timing-functions-within-keyframes">Using timing functions within keyframes</h2>
+<p>It’s worth noting that when you specify a timing function for an animation, the timing function applies to <em>each keyframe</em> of the animation.</p>
+<p>This means that if you were to specify four keyframes, the timing function would apply to each. An ease-out function would slow down as it approached each keyframe.</p>
+<p>For that reason we would usually define the timing function for animations as linear, and control the pacing on a per-keyframe basis:</p>
+<pre><code>@keyframes my-animation {
+  0% {
+  ...
+  animation-timing-function: linear;
+  }
+  50% {
+  ...
+  animation-timing-function: ease-out;
+  }
+}</code></pre>
+<p>In this case the first half of the animation will be linear, and the second half would use the <code>ease-out</code> timing function.</p>
+<h2 id="homework-10">Homework</h2>
+<p>I’ve created a simple keyframe animation <a href="http://codepen.io/donovanh/pen/MYMJRd?editors=010">here on CodePen</a>. The properties are listed in the CSS. Try changing some of these properties, and see what happens.</p>
+<h1 id="keyframes-in-action">Keyframes in action</h1>
+<p>So far we’ve been introduced to the <code>animation</code> properties, and had a chance to see how it relies on <code>keyframes</code>. Next we’ll cover keyframes in greater detail.</p>
+<h2 id="things-to-look-out-for">Things to look out for</h2>
+<p>There are a couple of things about <code>keyframes</code> I’d like to cover before getting into a practical example. The first is an alternate syntax you may see, using the keywords <code>from</code> and <code>to</code>.</p>
+<pre><code>@keyframes name {
+  from {
+    ...
+  }
+  to {
+    ...
+  }
+}</code></pre>
+<p>While this is simple an alternate way of writing 0% and 100%, it can be simpler to understand and useful for simple animations.</p>
+<p>You may have noticed that sometimes more than one percentage value is used on the same line. This is a way to have the animation pause for a while, or hold a particular state.</p>
+<p>For example:</p>
+<pre><code>@keyframes name {
+  0%, 20% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}</code></pre>
+<p>This example will have the element start with an opacity of 0, and stay invisible until 20% through the animation, at which time it will then begin to animate toward an opacity of 1.</p>
+<p>We’ll make use of this tomorrow when we have multiple animations we want to stay in sync with each other.</p>
+<h2 id="example-save-button-wiggle-effect">Example: Save button wiggle effect</h2>
+<p>Remember the “Save” button example from back in week 1? Let’s revisit that example and look at how <code>keyframes</code> are used along with the <code>animation</code> property to create the effect.</p>
+<figure>
+<img src="images/save_button-min.gif" alt="Source: http://codepen.io/donovanh/pen/KwEQdQ" /><figcaption>Source: http://codepen.io/donovanh/pen/KwEQdQ</figcaption>
+</figure>
+<p>Before adding any animation I added some basic styles to a button to make it look like CodePen’s. An orange border at the top, dark gradient and white text. I’m using absolute positioning in the demo to make sure the button is in the middle of the screen.</p>
+<p>The first thing I generally do is apply an <code>animation</code> property to the element. Like so:</p>
+<pre><code>button {
+  animation: wiggle 2s linear infinite;
+}</code></pre>
+<p>In this case we’re applying a set of keyframes called “wiggle”, and the animation runs for two seconds with the “linear” timing function. There’s also a new attribute here, <code>infinite</code>.</p>
+<p>The “infinite” value here is for the property <code>animation-iteration-count</code>. We can have animation repeat a set number of times, and by default they repeat once. In this case it’ll repeat an infinite number of times.</p>
+<p>Next, we plan out what these <code>keyframes</code> are for the “wiggle” animation. Here’s the result:</p>
+<pre><code>@keyframes wiggle {
+  0%, 7% {
+    transform: rotateZ(0);
+  }
+  15% {
+    transform: rotateZ(-15deg);
+  }
+  20% {
+    transform: rotateZ(10deg);
+  }
+  25% {
+    transform: rotateZ(-10deg);
+  }
+  30% {
+    transform: rotateZ(6deg);
+  }
+  35% {
+    transform: rotateZ(-4deg);
+  }
+  40%, 100% {
+    transform: rotateZ(0);
+  }
+}</code></pre>
+<p>What we have here is a series of waypoints for the browser to animate between. Each one rotates the “Save” button on the z-axis. The angles start bigger and get smaller over the course of the animation.</p>
+<p>Here’s how the animation tilts the button back and forth over time:</p>
+<figure>
+<img src="images/wiggle-min.gif" alt="Source: http://codepen.io/donovanh/pen/pvXJqp" /><figcaption>Source: http://codepen.io/donovanh/pen/pvXJqp</figcaption>
+</figure>
+<p>We can see that the browser creates the in-between steps between each keyframe. Without relying on fancy timing functions, this animation manages to add a lot of character to the button.</p>
+<p><a href="http://codepen.io/donovanh/pen/KwEQdQ">Here’s a CodePen</a> showing the Save button wiggle in action.</p>
+<h2 id="homework-11">Homework</h2>
+<p>I’ve created <a href="http://codepen.io/donovanh/pen/azgjMz?editors=010">a new CodePen with a single animated element</a>. It makes use of an “animation-timing-function” within the keyframes and has a series of keyframes creating a relatively complex animation.</p>
+<p>What happens when you take some frames away? Or change the percentage values? Can you make the cube do something else? See if you can create a feeling of “life” in something so simple!</p>
+<h1 id="multiple-animations">Multiple animations</h1>
+<p>In this chapter we’ll be looking at how we can make use of multiple sets of keyframes running at the same time.</p>
+<h2 id="traffic-lights">Traffic lights</h2>
+<p>There are times when we want multiple animations on a page to stay in sync, but at the same time each animation has its own timing. A good example that illustrates this is traffic lights</p>
+<p>Here we have a simple (UK-style) traffic light pattern:</p>
+<figure>
+<img src="images/traffic-lights-min.gif" alt="Source: http://codepen.io/donovanh/pen/ogRRdR?editors=010" /><figcaption>Source: http://codepen.io/donovanh/pen/ogRRdR?editors=010</figcaption>
+</figure>
+<p>We have three lights, each with their own pattern of being off and on. We can create this by giving each light their own animation.</p>
+<pre><code>.red {
+  animation: red 10s linear infinite;
+}
+.amber {
+  animation: amber 10s linear infinite;
+}
+.green {
+  animation: green 10s linear infinite;
+}</code></pre>
+<p>We have three animations, one for each light. Each animation lasts the same length of time so that when they loop, they won’t go out of sync. Next we need to plan the keyframes.</p>
+<p>When creating this example I found it helpful to think of the lights as a grid. The animation happens from left to right, with each light being on or off at certain times.</p>
+<p><img src="images/traffic-light-grid.png" /></p>
+<p>The grid is divided up into 5 columns. This means that we can deal with “chunks” of 20% and create sets of keyframes from these chunks.</p>
+<p>Taking each light one at a time, we can start with the red light. It would be on for the first and second chunks, then off for the rest of the animation. The resulting <code>keyframes</code>:</p>
+<pre><code>@keyframes red {
+  0% {
+    background: black;
+  }
+  2%, 40% {
+    background-color: red;
+  }
+  42%, 100% {
+    background: black;
+  }
+}</code></pre>
+<p>I’ve added a 2% gap at the beginning and had the third part of the animation begin at 42% as this adds a little bit of a fade to the way the traffic light appears. It’s the subtle stuff that makes all the difference.</p>
+<p>With the red light done, we look at the amber light on the grid.</p>
+<p>The amber light is off at the beginning, on for one chunk, then off for two chunks, and finally on again. The <code>keyframes</code> for this light:</p>
+<pre><code>@keyframes amber {
+  0%, 20% {
+    background: black;
+  }
+  22%, 40% {
+    background: #FF7E00;
+  }
+  42%, 80% {
+    background: black;
+  }
+  82%, 100% {
+    background: #FF7E00;
+  }
+}</code></pre>
+<p>Lastly, the green light. This light is off for the first two chunks, then on for two, and finally off for one.</p>
+<pre><code>@keyframes green {
+  0%, 40% {
+    background: black;
+  }
+  42%, 80% {
+    background: green;
+  }
+  82%, 100% {
+    background: black;
+  }
+}</code></pre>
+<p>We can <a href="http://codepen.io/donovanh/pen/ogRRdR?editors=010">put it all together</a> and see it in action.</p>
+<h2 id="further-reading">Further reading</h2>
+<p>For more reading on the subject of <code>keyframe</code> syntax, do check out <a href="https://css-tricks.com/snippets/css/keyframe-animation-syntax/">CSS tricks article on the subject</a>.</p>
+<h2 id="homework-12">Homework</h2>
+<p>Today’s homework is a challenge. The traffic light example might look strange to you as it follows the UK pattern.</p>
+<p>Can you start with <a href="http://codepen.io/donovanh/pen/ogRRdR?editors=010">the traffic light example</a> and change it so that it works more like traffic lights in the USA or elsewhere?</p>
+<h1 id="animation-recap">Animation recap</h1>
+<p>We’ve covered a lot of detail so far! I hope it’s making sense.</p>
+<p>When learning this, I must admit it took me a while for this animation and keyframe stuff to make sense to me. If it’s not clear yet, don’t be frustrated. Keep at it, and bit by bit the various tricks of using animation in HTML and CSS will become clear.</p>
+<p>In this chapter we’re going to take a moment to recap what we learned this week. But first, we’ll take a look at that homework challenge!</p>
+<h2 id="homework-challenge-traffic-lights">Homework challenge: Traffic lights</h2>
+<p>The homework challenge should have been easy. Well, it’s easy if you know how. I’ve created an updated version of <a href="http://codepen.io/donovanh/pen/ogRRdR?editors=010">the UK-based traffic light demo</a>, this time changing the sequence to remove the “red + amber” stage.</p>
+<p><a href="http://codepen.io/donovanh/pen/vEqbdw?editors=010">See it in action here</a>. I’ve made the colour scheme match what Google suggested American traffic lights look like.</p>
+<h2 id="recap-animations">Recap: Animations</h2>
+<p>This week we looked at the <code>animation</code> property and how it works alongside <code>keyframes</code>.</p>
+<h3 id="like-a-transition-only-different">Like a transition, only different</h3>
+<p>While the animation property looks and works in a way that’s similar to <code>transition</code>, it has some subtle differences. While a transition will only occur when an element changes, animations can begin straight away.</p>
+<p>Using the various properties, animations can loop a certain number of times (or forever), and can even begin with a negative value for their delay. This starts the animation with it already having progressed.</p>
+<p>By default, animations will play from start to finish, then jump back to their default state. We can have the animation freeze at its end point by using the <code>animation-direction</code> property of <code>forwards</code>.</p>
+<p>Animations use <code>timing-functions</code>, much like transitions. However, the timing function applies to each individual keyframe, <strong>not</strong> the entire set of keyframes. Instead, you can specify <code>animation-timing-function</code> within a keyframe for more granular control.</p>
+<p>Finally, animations can be specified in shorthand, just like transitions:</p>
+<pre><code>animation: keyframe-name 2s forwards linear;</code></pre>
+<h3 id="keyframes-1">Keyframes</h3>
+<p>Every animation needs to reference a set of <code>keyframes</code>. These keyframes are a series of percentages, describing each “stage” of the animation. The browser fills in the gaps automatically.</p>
+<p>Keyframes have their own shorthand (<em>to</em> and <em>from</em>) when you want to only go from one state to another.</p>
+<p>Stacking percentages beside each other can have the animation “pause” at that stage.</p>
+<p>Lastly, it’s possible to omit the 0% keyframe and the browser will take the element’s style as implied. For example, to have something fade away, we don’t necessarily have to give it a starting <code>opacity</code> of 1 (assuming the element is already visible):</p>
+<pre><code>@keyframes name {
+  100% {
+    opacity: 0;
+  }
+}</code></pre>
+<h2 id="putting-them-together">Putting them together</h2>
+<p>When we want to use an animation, we always have the two pieces:</p>
+<pre><code>.element {
+  animation: keyframe-name ...
+}
+@keyframes keyframe-name {
+  ...
+}</code></pre>
+<h2 id="homework-13">Homework</h2>
+<p>At this point we should be clear on the different between the animation property and the transition property.</p>
+<p>Have a look at some of the <a href="http://codepen.io/collection/AxKOdY/">Principles of Animation for the Web</a> examples. Each is made entirely with HTML and CSS, using keyframe animation. Try forking one and see what you can do with it.</p>
+<h1 id="storytelling">Storytelling</h1>
+<p>Now that we’ve covered both the <code>transition</code> and <code>animation</code> property, let’s combine both into an animation with a hover effect.</p>
+<h2 id="heroes">Heroes</h2>
+<p>Many sites like to make use of a large, attention-grabbing image at the top of their homepage. Sometimes called a “hero image”, this is usually a full-width banner style element.</p>
+<p>A nice example I found recently was the Fabric landing page. A CSS animatiom shows how Fabric works as a modular framework.</p>
+<figure>
+<img src="images/fabric-min.gif" alt="Source: https://get.fabric.io/" /><figcaption>Source: https://get.fabric.io/</figcaption>
+</figure>
+<p>Another interesting example is the Mailchimp homepage. Here the hero image tells a story by demonstrating how emails are created.</p>
+<figure>
+<img src="images/mailchimp-min.gif" alt="Source: http://mailchimp.com" /><figcaption>Source: http://mailchimp.com</figcaption>
+</figure>
+<p>You may have also seen it in action on <a href="https://cssanimation.rocks/courses/animation-101/">my CSS Animation 101 email course</a> landing page:</p>
+<figure>
+<img src="images/course-min.gif" alt="Source: https://cssanimation.rocks/courses/animation-101/" /><figcaption>Source: https://cssanimation.rocks/courses/animation-101/</figcaption>
+</figure>
+<p>In each of these examples, they use animation to set the tone of the page and illustrate what the site is about.</p>
+<h2 id="example-scrolling-background">Example: Scrolling background</h2>
+<p>Let’s create an example of our own. In this example I’ve created a “web page” style graphic that moves up and down the screen.</p>
+<figure>
+<img src="images/screen-min.gif" alt="Source: http://codepen.io/donovanh/pen/LEwedW?editors=110" /><figcaption>Source: http://codepen.io/donovanh/pen/LEwedW?editors=110</figcaption>
+</figure>
+<p>For a bit of interactivity, the animation pauses and a message is shown when a mouse cursor hovers over the screen. It makes use of both animations and transitions to achieve this effect.</p>
+<p><a href="http://codepen.io/donovanh/pen/LEwedW?editors=110">See it in action here</a>.</p>
+<h2 id="part-1-background-animation">Part 1: Background animation</h2>
+<p>To set up this example we begin with the HTML element to contain it:</p>
+<pre><code>&lt;div class=&quot;screen&quot;&gt;&lt;/div&gt;</code></pre>
+<p>We can make the “screen” div look like a monitor or iPad using some styles:</p>
+<pre><code>.screen {
+  background: #e25865 url(//cssanimation.rocks/screen/images/screen_bg.png) no-repeat top center;
+  background-size: 100% auto;
+  border: 2em solid #fff;
+  border-radius: 1em;
+  width: 40em;
+  height: 30em;
+}</code></pre>
+<p>We have some styles here defining the size and border, and <a href="https://cssanimation.rocks/screen/images/screen_bg.png">setting a background image</a>.</p>
+<p>The effect we’re creating is based on moving a background image. The background image is taller than the screen and has a <code>background-size</code> of <code>100% auto</code>. This means the background will fit the width of our container but be taller.</p>
+<p>With a background image to animate, we can now write the <code>keyframes</code> that make it look like someone is scrolling a web page:</p>
+<pre><code>@keyframes scroll {
+  0%, 10% {
+    background-position: 0 0;
+  }
+  20%, 30% {
+    background-position: 0 -22em;
+  }
+  50%, 60% {
+    background-position: 0 -44em;
+  }
+  90%, 100% {
+    background-position: 0 0;
+  }
+}</code></pre>
+<p>The property we’re animating is <code>background-position</code>. With this property we can move it up and down. It begins at <code>0 0</code>, which means zero distance from the left, and zero from the top.</p>
+<p>In the next frames we have the background move 22 ems up, then 44 ems up, then return to the top of the page. Let’s create an animation property to apply this to the “screen” element.</p>
+<pre><code>.screen {
+  animation: scroll 5s infinite cubic-bezier(.52,-0.39,.3,1.43);
+}</code></pre>
+<p>This CSS is applying the a set of keyframes called “scroll”, telling it to take 5 seconds, run forever and use a <code>cubic-bezier</code> timing function. In this case the cubic bezier function gives the animation the bounciness as without it the movement would look less lifelike.</p>
+<p>I generated this bezier over on <a href="http://cubic-bezier.com/#.52,-0.39,.3,1.43">cubic-bezier.com</a>. If you haven’t bookmarked that site yet, I’d absolutely recommend you do!</p>
+<h2 id="part-2-adding-the-hover-transition">Part 2: Adding the hover transition</h2>
+<p>It’s a good idea to pause or stop an animation once it’s finished or when you want people to concentrate on something else. Constant animation can be distracting, so let’s make use of <code>animation-play-state</code> to pause the animation when on hover.</p>
+<pre><code>.screen:hover {
+  animation-play-state: paused;
+}</code></pre>
+<p>This means that when a cursor hovers over the animation, it will pause. And when the cursor moves away again, it will resume its default <code>playing</code> state.</p>
+<p>You can achieve this with JavaScript also. One possibility is to have some JavaScript disable the animation when the user interacts with another part of the page, or perhaps when they scroll away. We’ll take a look at how to enable animations on scroll later.</p>
+<h3 id="adding-a-message">Adding a message</h3>
+<p>We can also go further and have a message transition into place when a user hovers over the element. To do this we’ll need a little more HTML:</p>
+<pre><code>&lt;div class=&quot;screen&quot;&gt;
+  &lt;div class=&quot;message&quot;&gt;Hover message!&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+<p>In <a href="http://codepen.io/donovanh/pen/LEwedW?editors=110">the CodePen CSS</a> we position this message in the middle of the “screen” and make it invisible.</p>
+<pre><code>.message {
+  /*... positioning styles ...*/
+  opacity: 0;
+  transition: all 0.4s ease-out;
+}</code></pre>
+<p>We can then show it on hover using a <code>transition</code>:</p>
+<pre><code>.screen:hover .message {
+  opacity: 1;
+}</code></pre>
+<p>Since we set a <code>transition</code> on the “message” styling, it creates the animation both when the cursor hovers over the element and when it leaves. The paused animation and transition effects look like this:</p>
+<figure>
+<img src="images/screen-hover-min.gif" alt="Source: http://codepen.io/donovanh/pen/LEwedW?editors=110" /><figcaption>Source: http://codepen.io/donovanh/pen/LEwedW?editors=110</figcaption>
+</figure>
+<h2 id="summary-1">Summary</h2>
+<p>In this chapter we combined both an animation and a transition to create an effect that could be useful for landing pages and product tours. We made use of the <code>animation-play-state</code> to make sure the animation stopped when we wanted it to.</p>
+<h2 id="homework-14">Homework</h2>
+<p>Take a moment to think about what we’ve covered so far.</p>
+<p>We covered a lot. Combining animations and transitions is a powerful way to bring pages to life.</p>
+<p>When thinking about how this can apply to your work, think about how it might be controlled too. When might animation work for your users’ benefit, and when might it work against it? It’s great to know how to animate but even better to know when not to.</p>
+<h1 id="star-wars">Star Wars</h1>
+<p>Get out the popcorn! In this chapter we’ll have some fun making an SVG animation. We will be building the Star Wars movie title from the “The Force Awakens” trailer.</p>
+<figure>
+<img src="images/starwars-min.gif" alt="Source: https://www.youtube.com/watch?v=ngElkyQ6Rhs" /><figcaption>Source: https://www.youtube.com/watch?v=ngElkyQ6Rhs</figcaption>
+</figure>
+<p>This example combines CSS animation with some other CSS properties you may find helpful, specifically the transforms <code>scale</code>, <code>translate</code> and <code>rotate</code>.</p>
+<h2 id="transform-not-an-animation-property">Transform: Not an animation property</h2>
+<p>While it may sound like it creates an animation, the transform property is in fact used setting a static position, skew or scale of an element. We can use it to create great effects but to do so we need to have a different transform for each keyframe or state we animate.</p>
+<h2 id="transform-scale-translatez-and-rotatey">Transform: scale(), translateZ() and rotateY()</h2>
+<p>We can make elements larger or smaller using <code>scale</code>. Using <code>translateZ</code> we can move elements in the Z-axis. This axis would be the one represented by drawing a line from you, through the monitor.</p>
+<p>In this case we’ll be using a combination of scale and translateZ to make it look like some words are flying through space.</p>
+<p>Lastly we’ll use <code>rotateY</code> to spin the letters of the tagline. Rotating around the Y-axis will require a bit of 3D work in the browser.</p>
+<h2 id="svg-html-and-css">SVG, HTML and CSS</h2>
+<p>In preparation for this example I made two SVG files for the <a href="https://cssanimation.rocks/demo/starwars/images/star.svg">Star</a> and <a href="https://cssanimation.rocks/demo/starwars/images/wars.svg">Wars</a> parts of the logo. Do feel free to grab them to use if you want to play along.</p>
+<p>The HTML for the demo is as follows:</p>
+<pre><code>&lt;div class=&quot;starwars-demo&quot;&gt;
+  &lt;img src=&quot;//cssanimation.rocks/demo/starwars/images/star.svg&quot; alt=&quot;Star&quot; class=&quot;star&quot;&gt;
+  &lt;img src=&quot;//cssanimation.rocks/demo/starwars/images/wars.svg&quot; alt=&quot;Wars&quot; class=&quot;wars&quot;&gt;
+  &lt;h2 class=&quot;byline&quot; id=&quot;byline&quot;&gt;The Force Awakens&lt;/h2&gt;
+&lt;/div&gt;</code></pre>
+<p>A static image <a href="https://cssanimation.rocks/demo/starwars/images/bg.jpg">of some stars</a> is used for the background. The font in the byline was tricky to find, so I’ve referenced the web font “Lato” in this example.</p>
+<p>With some absolute positioning to position the content in the middle of the screen, we begin with this:</p>
+<p><img src="images/starwars.png" /></p>
+<h2 id="animating-the-star-and-wars">Animating the Star and Wars</h2>
+<p>We want the larger text to fade into view, while also starting larger and getting smaller over time. This is a good case for the <code>scale()</code> transform. Let’s use it on the word “Star” with these keyframes:</p>
+<pre><code>@keyframes star {
+  0% {
+    opacity: 0;
+    transform: scale(1.5) translateY(-0.75em);
+  }
+  20% {
+    opacity: 1;
+  }
+  89% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translateZ(-1000em);
+  }
+}</code></pre>
+<p>There are two properties that change over the course of this animation. The <code>opacity</code> and <code>transform</code>. The opacity change makes it start transparent, and fade away at the end so that we can loop the animation.</p>
+<p>The transform begins by setting the scale at <code>1.5</code>. This means that the initial size of the text is 150% larger than normal. At 89%, we set the transform property to a scale of 1. This means that between 0% and 89%, the scale goes from 150% to 100%.</p>
+<p>The final <code>transformZ</code> causes the words to zoom away quickly.</p>
+<p>We can apply these keyframes to the word “Star” like so:</p>
+<pre><code>.star {
+  animation: star 10s ease-out infinite;
+}</code></pre>
+<p>A similar set of keyframes is used for the word “Wars”.</p>
+<h2 id="making-it-3d">Making it 3D</h2>
+<p>Using 3D transforms in CSS, whether translating along the Z-axis, or rotating around the Y and Z axes requires that we set a stage for the 3D. In HTML terms this means we create a container, and tell the browser that some 3D stuff is going to happen.</p>
+<p>We do this by adding the following to the <code>.starwars-demo</code> div:</p>
+<pre><code>.starwars-demo {
+  perspective: 800px;
+  transform-style: preserve3d;
+}</code></pre>
+<p>These two properties tell the browser that the container’s children should be positioned in 3D, rather than flat. <a href="https://css-tricks.com/almanac/properties/t/transform-style/">CSS Tricks</a> goes into more detail on the property.</p>
+<p>Secondly, the <code>persective</code> property tells the browser how “deep” the scene needs to be. In case we’ve made it <code>800px</code>. Smaller values create more “extreme” perspective effects as the scene is shorter.</p>
+<p>With that covered, we’ll introduce the tagline.</p>
+<h2 id="the-force-awakens">The Force Awakens</h2>
+<p>The tagline “The Force Awakens” appears in the trailer with each letter spinning into place. We can create this effect using the <code>rotateY</code> transform. In this case we’ve wrapped each of the letters in a <code>span</code> element, so that we can apply animation to each letter.</p>
+<p>An issue I quickly discovered was that there isn’t a straightforward way to animate each of the letters in the byline. My first approach was to manually wrap each letter in a <code>span</code> tag. This worked but made the HTML a little messy. The current demo includes some JavaScript (thanks to <a href="https://twitter.com/tadywankenobi">Tady</a> for the assist) that wraps each letter automatically in a <code>span</code>.</p>
+<p>We’re going to apply an animation to each letter.</p>
+<p>First, the keyframes:</p>
+<pre><code>@keyframes spin-letters {
+  0%, 10% {
+    opacity: 0;
+    transform: rotateY(90deg);
+  }
+  30% {
+    opacity: 1;
+  }
+  70%, 86% {
+    transform: rotateY(0);
+    opacity: 1;
+  }
+  95%, 100% {
+    opacity: 0;
+  }
+}</code></pre>
+<p>To begin with, the letters are rotated 90 degrees, then by 70% through the animation, they’ve been animated to face the viewer.</p>
+<p>We can apply this set of keyframes to each span like so:</p>
+<pre><code>.byline span {
+  animation: spin-letters 10s linear infinite;
+}</code></pre>
+<p>The result is each of the <code>span</code> containers that hold each letter will fade and spin slowly into place, before fading away at the end of the animation.</p>
+<p>Putting it together we have the <a href="http://codepen.io/donovanh/pen/pJzwEw?editors=110">finished demo</a>.</p>
+<figure>
+<img src="images/css-starwars-min.gif" alt="Source: http://codepen.io/donovanh/pen/pJzwEw?editors=110" /><figcaption>Source: http://codepen.io/donovanh/pen/pJzwEw?editors=110</figcaption>
+</figure>
+<h2 id="homework-15">Homework</h2>
+<p>If you have time I’d encourage you to take a look through the CSS section of the <a href="http://codepen.io/donovanh/pen/pJzwEw?editors=110">CodePen version</a>.</p>
+<p>You may notice some “media” queries in the CSS. We use these to resize the example for smaller devices. Try changing some of the animation keyframes, or the <code>transform</code> values to see what happens.</p>
+<h1 id="revealing-content-on-scroll">Revealing content on scroll</h1>
+<p>A popular use for animation on the web is adding movement to elements when the browser scrolls. In this chapter we’ll take a look at how to do this.</p>
+<p>Here’s <a href="http://codepen.io/donovanh/pen/gbVMjm">today’s demo on CodePen</a>. Try scrolling down the page, and see how the quotes and cats fade into place.</p>
+<h2 id="wow.js">Wow.js</h2>
+<p>Many sites trigger custom animations when you scroll to a certain point. They could start playing a video, trigger a complex keyframe animation, or just have items fade into place to draw attention to them.</p>
+<p>In each case, what’s happening is that there’s some JavaScript that adds a class to an element when it’s visible on screen. We can then attach animations to the class, so that the browser scrolling results in the animation starting at the right time.</p>
+<p>There are many JavaScript options that add classes, and one I’ve found easy to use is <a href="http://mynameismatthieu.com/WOW/">Wow.js</a>. Let’s use it to create a simple example where content fades into view as we scroll.</p>
+<p><img src="images/scroll-min.gif" alt="Source: http://codepen.io/donovanh/pen/gbVMjm" />&quot;&gt;</p>
+<h2 id="using-wow.js">Using Wow.js</h2>
+<p>Using Wow.js involves two steps. The first is to <a href="https://raw.githubusercontent.com/matthieua/WOW/master/dist/wow.min.js">download the JavaScript</a>. Place the <code>wow.min.js</code> file in your project’s JavaScript folder. Next step is to reference this file from within your HTML:</p>
+<pre><code>&lt;script src=&quot;javascripts/wow.min.js&quot;&gt;&lt;/script&gt;</code></pre>
+<p>(Assuming your folder is called <code>javascripts</code> - change as needed)</p>
+<p>Then, we invoke the JavaScript using this command (paste it after the previous code):</p>
+<pre><code>&lt;script&gt;
+ new WOW().init();
+&lt;/script&gt;</code></pre>
+<p>We can now add “wow” classes to our content and Wow.js will take care of working out whether our content is on-screen.</p>
+<h2 id="adding-wow-classes">Adding “wow” classes</h2>
+<p>If we have an element we want to animate on scroll, start by making sure it has the class “wow”:</p>
+<pre><code>&lt;p class=&quot;wow&quot;&gt;...&lt;/p&gt;</code></pre>
+<p>This means that when the browser scrolls this content onto the screen, Wow.js will add “animated” to the class, like this:</p>
+<pre><code>&lt;p class=&quot;wow animated&quot;&gt;...&lt;/p&gt;</code></pre>
+<p>If we had an animation on our <code>p.animated</code> elements, the animation would only happen when this class is added.</p>
+<h2 id="hiding-and-showing">Hiding and showing</h2>
+<p>For our demo, we’ll hide all elements with the <code>wow</code> class, and show them when they have the <code>animated</code> class. First, we hide them:</p>
+<pre><code>.wow {
+  opacity: 0;
+  transition: all 0.5s 0.5s ease-out;
+}</code></pre>
+<p>We also apply a <code>transition</code> here so that the element will fade in. Notice the second <code>0.5s</code>. In this case we’re also adding a <code>delay</code> of half a second. This will allow the element a chance to properly scroll into the viewport before it fades in.</p>
+<p>The next code defines how the element will look with Wow.js’s <code>animated</code> class added:</p>
+<pre><code>.animated {
+  opacity: 1;
+}</code></pre>
+<p>We should now have a situation where items will fade in as the user scrolls! <a href="http://codepen.io/donovanh/pen/gbVMjm">See it in action on the demo</a>.</p>
+<h2 id="using-animate.css">Using Animate.css</h2>
+<p>Wow.js has been designed to work well with the CSS framework <a href="http://daneden.github.io/animate.css/">Animate.css</a>. I’ve not used in this example yet as it’s good to understand how to create our own transitions, but it’s worth looking at some of the transitions Animate.css gives us out of the box.</p>
+<p>In <a href="http://codepen.io/donovanh/pen/xbvOQK">this example</a> I’ve used Animate.css. Note how there are no animations or transitions in the CSS. Instead, I’ve added a class to the HTML to tell Animate.css which animation to apply:</p>
+<pre><code>&lt;section class=&quot;image wow bounceInUp&quot;&gt;</code></pre>
+<p>The class <code>bounceInUp</code> is a reference to one of Animate.css’s many built in animations. If you select the “cog” on the CSS section in the demo, you’ll see that I’ve referenced the Animate.css framework under “External CSS file”.</p>
+<h2 id="using-modernizr">Using Modernizr</h2>
+<p>It’s generally a good idea to protect against situations in which we hide content and show it again using JavaScript. People may not have JavaScript enabled or working for some reason or another. A script such as <a href="http://modernizr.com/">Modernizr</a> can be used to handle this. It’ll add a <code>js</code> class to the body of the document, and we can then bring that into our styles.</p>
+<p>I’ve included Modernizr in the <a href="http://codepen.io/donovanh/pen/gbVMjm">demo</a>.</p>
+<h2 id="homework-16">Homework</h2>
+<p>Making content fade into place is a great start, but what ways can you imagine this being used to add value to your designs and sites? When browsing, look out for times when content seems to start animating as you scroll to it.</p>
+<p>When does it work, and when does it not work so well?</p>
+<h1 id="accessibility">Accessibility</h1>
+<p>So far we’ve been looking at what animation on the web is, and how to create animation. Before we finish up for this course, let’s take a moment to think about what we can do to make sure we do right by our visitors.</p>
+<p>There are many ways animation can help our content, as well as ways it can get in the way.</p>
+<h2 id="make-sure-content-is-accessible">Make sure content is accessible</h2>
+<p>An example we’ve used a few times is when we animate content to show it on screen. If content is beginning in a hidden state, we need to be careful that it doesn’t remain hidden for some users. Older browsers support CSS animations to varying degrees, and JavaScript may not always work. We can use tools such as <a href="http://modernizr.com/">Modernizr</a> to design around potential issues.</p>
+<p>We also use animation to convey meaning and intent in our designs. When designing animations, do keep in mind that some people won’t be able to see them. They may be using a screen reader or have different browser settings that cause your animations to not work as intended. Make sure important information is available regardless of whether the animation works.</p>
+<p>Just that <a href="http://www.punkchip.com/autoplay-is-bad-for-all-users/">autoplaying video is bad for users</a>, animation that plays automatically can be distracting from other content on the page. Try to limit where and when animation happens to situations where you <em>want</em> your visitors to be distracted by it. This might also mean limiting how long an animation plays for, or ensuring it has stopped before your visitor needs to focus elsewhere.</p>
+<h2 id="give-control">Give control</h2>
+<p>The W3C <a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#time-limits-pause">recommends</a> that any content that is blinking, scrolling or auto-updating for more than 5 seconds should have a means of pausing or removing the motion. Using the <code>animation-play-state</code> is one way to pause animations as needed, as <a href="http://codepen.io/donovanh/pen/LEwedW">seen on hover here</a>.</p>
+<h2 id="allow-for-alternate-inputs">Allow for alternate inputs</h2>
+<p>A growing percentage of your visitors will be using phones. When on a phone, there is no cursor and no hover state. We need to design around this. One option I often use is to detect a tap and add an “active” class to the target. I then add transitions or animations to both the <code>:hover</code> as well as the <code>.active</code> states.</p>
+<h2 id="confusion">Confusion</h2>
+<p>Sometimes websites go too far and try to animate <em>all the things</em>. This doesn’t just muddy the site’s message, it can cause confusion. This is especially true of UI. When adding animation to elements on the page that visitors interact with, make sure that it’s obvious <em>why</em> the animation has been triggered. Your visitors don’t have time to decipher complexity in either the visual design or the way it moves, so try to be clear.</p>
+<h2 id="dont-make-me-sick">Don’t make me sick</h2>
+<p>Too much animation, or the wrong kind of animation, can make people feel sick.</p>
+<p>When Apple introduced iOS7, an updated operating system for their phone, it brought with it a lot more motion and animation. Some of this was <a href="http://reverttosaved.com/2013/09/28/why-ios-7-is-making-some-users-sick/">enough to make people sick</a>. Some people, like myself, struggle to read in a car or bus as the motion makes us feel ill, and others can’t play certain video games for more than a few minutes at a time.</p>
+<p>The reason this happens is down to the way our <a href="https://www.youtube.com/watch?v=dSHnGO9qGsE">vestibular system</a> works. We have 3 tubes in our ears that help us determine where our head is in 3D space. It’s possible to trick our minds into thinking we’re moving, and then when the vestibular system doesn’t echo the movement, our brains get confused and we feel ill.</p>
+<p>That we get sick is an evolutionary side effect. Throwing up is a complex thing, and we have a special part of our brains dedicated to handling it. As it happens, this part of the brain is located near the part that deals with balance, and so we feel ill.</p>
+<p>This is something that could become more of an issue as we begin to see more wearable technology. When designing larger animations, be sure to test whether people are comfortable with the types of motion in place.</p>
+<p><a href="http://vestibular.org/understanding-vestibular-disorder">Vestibular.org</a> is a great starting point to learn more about this topic.</p>
+<h2 id="accessibility-is-for-everyones-benefit">Accessibility is for everyone’s benefit</h2>
+<p>Accessibility isn’t just for people using screen readers or alternative means of browsing our content. We’re all distracted sometimes, network connections drop, we’re checking our phones in a queue at the post office or glancing at directions when driving. We should be aware of the ways people might use what we make and ensure our animations don’t get in the way.</p>
+<h2 id="homework-17">Homework</h2>
+<p>If your job involves designing or building interfaces for people to use, do take time to read <a href="http://www.nngroup.com/articles/animation-usability/">NNGroup’s Animation for Attention and Comprehension</a>. Think about how people might use your work, and what it might mean if they couldn’t see the animation.</p>
+<h1 id="now-you-know-css-animation">Now you know CSS animation!</h1>
+<p>You’ve completed CSS Animation 101! I hope you’ve enjoyed this book.</p>
+<p>Before we finish up, let’s explore some resources you might want to bookmark and explore as you go further with CSS animation.</p>
+<h2 id="css-animation-cheatsheet">CSS Animation cheatsheet</h2>
+<p>I’ve prepared a <a href="https://cssanimation.rocks/cheatsheets/transitions_animations.pdf">transitions and animations cheat sheet (PDF)</a> that sums up the various properties of each. It is designed to fit onto one A4 page. Enjoy!</p>
+<h2 id="resources-to-bookmark">Resources to bookmark</h2>
+<p>It’s good to know how to create our own CSS animations and transitions, but sometimes it’s handy to build on existing platforms. Here are some great tools that we can use to save time and get the result we want quickly.</p>
+<h3 id="animate.css"><a href="http://daneden.github.io/animate.css/">Animate.css</a></h3>
+<p>Animate.css describes itself as “just add water” CSS animations. You can reference the CSS file and add any of the Animate classes to see them come to life. Here’s an <a href="http://codepen.io/donovanh/pen/xbvOQK">example using Animate.css</a>.</p>
+<h3 id="hover.css"><a href="http://ianlunn.github.io/Hover/">Hover.css</a></h3>
+<p>A nice alternative to Animate.css, Hover.css is another wide variety of ready to use animations that you can apply to links, buttons, logos or any other HTML element.</p>
+<h2 id="other-tools">Other tools</h2>
+<p>CSS animation is pretty powerful, and can achieve a lot without needing to resort to other technology such as JavaScript. However it’s not the right tool for all situations. Sometimes there’s a need for more complex animations, and JavaScript can help take things further. The best packages build on CSS to make use of its speed and browser support, but let you do more.</p>
+<h3 id="gsap"><a href="http://greensock.com/gsap">GSAP</a></h3>
+<p>Greensock Animation Platform is a JavaScript-based method of creating more advanced animations and offers fine control and great performance. There’s a bit of a learning curve but it’s a powerful tool.</p>
+<h3 id="snabbt.js"><a href="http://daniel-lundin.github.io/snabbt.js/">Snabbt.js</a></h3>
+<p>Snabbt is a powerful and elegant way to create more complex animation using custom timing functions. It generates transform matrices for the browser to animate, resulting in very good performance.</p>
+<h3 id="css-animate"><a href="http://cssanimate.com/">CSS Animate</a></h3>
+<p>CSS Animate is a tool for generating keyframe animations. It helps design animations by dragging an object around and uses a handy timeline approach.</p>
+<h3 id="cubic-bezier.com"><a href="http://cubic-bezier.com">Cubic-bezier.com</a></h3>
+<p>For when you want to create a feeling of life in your timing, Cubic-bezier.com is my go-to tool. A simple tool that helps sculpt timing functions. Alternately, a similar tool is built into Chrome’s inspector.</p>
+<h2 id="next-steps">Next steps</h2>
+<p>A question some have asked is “what do we do to progress past the 101 stage?”.</p>
+<p>My suggestion would be to look for challenges. Look to sites such as <a href="http://dribbble.com">Dribbble.com</a>, or <a href="http://codepen.io">CodePen.io</a> for inspiration. Look for ideas from popular products (I frequently remake Apple designs), movies or TV shows. Wonder, how would I capture that effect on the web? Would CSS be a good way to do it?</p>
+<p>I’d also suggest reading some of the posts on <a href="https://css-tricks.com/">CSS Tricks</a>, <a href="http://sarasoueidan.com/articles/index.html">SaraSoueidan.com</a>, and even my own <a href="https://cssanimation.rocks">CSSAnimation.rocks</a> website.</p>
+<p>So, if you don’t want this knowledge to fade, practice. Find reasons to use it, and look for what interests you. If you can make it fun, it’ll be all the easier.</p>
+<h2 id="dont-be-a-stranger-now">Don’t be a stranger, now</h2>
+<p>Have you been inspired to try some CSS animation? <a href="mailto:hello@cssanimation.rocks">Let me know</a> if you want to share something cool, or have any questions. I’ll look forward to hearing how you get on.</p>
+<p>You can find me on Twitter, I’m <span class="citation" data-cites="donovanh">[@donovanh]</span>(https://twitter.com/donovanh).</p>
+<p>If you want me to send you a sticker, reply to this email and let me know the address to send it to.</p>
+<p>Again, congratulations. You did it! Thank you for being part of this course!</p>
+<p>Donovan</p>
+<p><a href="https://cssanimation.rocks">CSSAnimation.rocks</a> / <span class="citation" data-cites="cssanimation">[@cssanimation]</span>(https://twitter.com/cssanimation)</p>
+<h1 id="level-up-your-css-animation-skills">Level up your CSS animation skills!</h1>
+<p>Congratulations for finishing this introduction to CSS animation! I hope you’ve enjoyed it. Adding animation to your web projects is a great way to make them stand out.</p>
+<p>Introducing an essential video course: <a href="http://courses.cssanimation.rocks/p/level-up/">Level Up Your CSS Animation Skills</a></p>
+<p>Continue learning how to create amazing animations with over 4 hours of high quality video lessons and lifetime access to all video content, cheatsheets and guides.</p>
+<p>You will learn how to:</p>
+<ul>
+<li>Create an amazing animated hero header</li>
+<li>Bring your UI to life with hover, touch and button animations</li>
+<li>Wow your visitors with scroll and parallax animations</li>
+<li>Build your very own animated carousel</li>
+<li>Adjust animations to fit all sizes of devices and browsers</li>
+<li>Optimise your CSS animations for reuse and size</li>
+<li>Each with fun examples you can follow along, step by step</li>
+</ul>
+<p>By the end of the course you’ll have the skills you need to create an impressive animated landing page!</p>
+<p>As a <em>reward for finishing this book</em> you can save 35% today with the code <code>BOOK</code> here:</p>
+<p>http://courses.cssanimation.rocks/p/level-up/?code=book</p>
+</body>
+</html>
