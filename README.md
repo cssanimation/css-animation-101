@@ -8,7 +8,7 @@ This book gives you a solid intruction to the topic, combining theory with pract
 
 ## Editions
 
-* [EPUB version](https://github.com/cssanimation/css-animation-101/raw/master/downloads/epub/cssanimation-101.epub) 
+* [ePub version](https://github.com/cssanimation/css-animation-101/raw/master/downloads/epub/cssanimation-101.epub) 
 * [Web version](https://cssanimation.rocks/css-animation-101/)
 
 Find more including free tutorials and other courses at [CSSAnimation.rocks](https://cssanimation.rocks).
