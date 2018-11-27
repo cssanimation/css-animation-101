@@ -14,6 +14,14 @@ This book gives you a solid intruction to the topic, combining theory with pract
 
 Find more including free tutorials and other courses at [CSSAnimation.rocks](https://cssanimation.rocks).
 
+## More CSS Animation stuff
+
+I have a great [video course on CSS Animation](http://courses.cssanimation.rocks/p/level-up/) you should totally check out. It's a practical guide to building and animating all sorts of parts of a landing page.
+
+I also send out a free weekly [CSS Animation newsletter](https://cssanimation.rocks/weekly/). Sign up and get an email of cool inspiration in your inbox each week.
+
+Lastly, if you want to help me with the above, consider [being a CSS Animation patreon](https://www.patreon.com/cssanimation). I've been running the newsletter for approaching 3 years and will continue to do so thanks to the support of people like you!
+
 ## Technical details
 
 This book is generated with [Pandoc book template](https://github.com/wikiti/pandoc-book-template).
