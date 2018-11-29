@@ -6,6 +6,8 @@ Animation using CSS can be overwhelming to learn all at once.
 
 This book gives you a solid intruction to the topic, combining theory with practical lessons. You’ll learn how, and why to use animation on your web pages and hopefully be inspired to try it on your own projects!
 
+[Tweet about this](https://twitter.com/intent/tweet?url=https%3A%2F%2Fgithub.com%2Fcssanimation%2Fcss-animation-101&via=cssanimation&text=CSS%20Animation%20101%20-%20A%20free%20introduction%20to%20CSS%20animation%20is%20now%20available%20to%20download%20here&hashtags=css%2C%20animation%2C%20book%2C%20development)
+
 ## Editions
 
 * [ePub version](https://github.com/cssanimation/css-animation-101/raw/master/downloads/epub/cssanimation-101.epub) 
