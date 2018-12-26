@@ -22,6 +22,14 @@ I also send out a free weekly [CSS Animation newsletter](https://cssanimation.ro
 
 Lastly, if you want to help me with the above, consider [being a CSS Animation patreon](https://www.patreon.com/cssanimation). I've been running the newsletter for approaching 3 years and will continue to do so thanks to the support of people like you!
 
+## Translations
+
+You can find this book in the following languages:
+
+### 中文 (Chinese) 
+
+[Source files](https://github.com/H-Wakanda/css-animation-101-cn)
+
 ## Contributing
 
 I love to get feedback, even if it's just to helpfully point out a typo! Pull requests welcomed, or else you can message me [on Twitter](https://twitter.com/cssanimation) or [by email](mailto:donovan@cssanimation.rocks).
