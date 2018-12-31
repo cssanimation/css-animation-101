@@ -24,6 +24,13 @@ Lastly, if you want to help me with the above, consider [being a CSS Animation p
 
 ## Translations
 
+Want to create a translation? Some tips:
+
+* Fork this repo and rename it `css-animation-101-xx` where `xx` is your language code, such as `cn` or `ru`
+* Translate the `chapters` content as well as the meta information
+* Don't forget the `ReadMe` file also. Be sure to include a link back to this repo and the site CSSAnimation.rocks.
+* Let me know [on Twitter](https://twitter.com/cssanimation) or [by email](mailto:donovan@cssanimation.rocks) and I'll link your work from here
+
 You can find this book in the following languages:
 
 ### 中文 (Chinese) 
