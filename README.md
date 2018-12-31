@@ -30,6 +30,9 @@ You can find this book in the following languages:
 
 [Source files](https://github.com/H-Wakanda/css-animation-101-cn)
 
+* [ePub version](https://github.com/H-Wakanda/css-animation-101-cn/raw/master/build/epub/book.epub)
+* [Web version](https://h-wakanda.github.io/css-animation-101-cn/)
+
 ## Contributing
 
 I love to get feedback, even if it's just to helpfully point out a typo! Pull requests welcomed, or else you can message me [on Twitter](https://twitter.com/cssanimation) or [by email](mailto:donovan@cssanimation.rocks).
