@@ -24,6 +24,8 @@ html: $(BUILD)/html/$(OUTPUT_FILENAME).html
 
 pdf: $(BUILD)/pdf/$(OUTPUT_FILENAME).pdf
 
+word: $(BUILD)/word/$(OUTPUT_FILENAME).docx
+
 $(BUILD)/epub/$(OUTPUT_FILENAME).epub: $(METADATA) $(CHAPTERS)
 	mkdir -p $(BUILD)/epub
 	pandoc $(ARGS) --epub-metadata=$(METADATA) --epub-cover-image=$(COVER_IMAGE) -o $@ $^
@@ -36,4 +38,8 @@ $(BUILD)/html/$(OUTPUT_FILENAME).html: $(CHAPTERS)
 
 $(BUILD)/pdf/$(OUTPUT_FILENAME).pdf: $(METADATA) $(CHAPTERS)
 	mkdir -p $(BUILD)/pdf
+	pandoc $(ARGS) -V documentclass=$(LATEX_CLASS) -o $@ $^
+
+$(BUILD)/word/$(OUTPUT_FILENAME).docx: $(METADATA) $(CHAPTERS)
+	mkdir -p $(BUILD)/word
 	pandoc $(ARGS) -V documentclass=$(LATEX_CLASS) -o $@ $^
