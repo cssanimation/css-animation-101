@@ -42,7 +42,7 @@ You can find this book in the following languages:
 
 ### العربية (Arabic) 
 
-* [PDF version](https://academy.hsoub.com/files/14-التحريك-عبر-css/)
+* [PDF version](https://github.com/cssanimation/css-animation-101/raw/master/downloads/translations/arabic/CSS-Animation-Arabic.pdf): Translated by [@HsoubAcademy](http://academy.hsoub.com)
 
 ## Contributing
 
