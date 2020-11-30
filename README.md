@@ -40,6 +40,10 @@ You can find this book in the following languages:
 * [ePub version](https://github.com/H-Wakanda/css-animation-101-cn/raw/master/build/epub/book.epub)
 * [Web version](https://h-wakanda.github.io/css-animation-101-cn/)
 
+### العربية (Arabic) 
+
+* [PDF version](https://github.com/cssanimation/css-animation-101/raw/master/downloads/translations/arabic/CSS-Animation-Arabic.pdf): Translated by [@HsoubAcademy](http://academy.hsoub.com)
+
 ## Contributing
 
 I love to get feedback, even if just to helpfully point out a typo! Pull requests welcomed, or else you can message me [on Twitter](https://twitter.com/cssanimation) or [by email](mailto:donovan@cssanimation.rocks).
