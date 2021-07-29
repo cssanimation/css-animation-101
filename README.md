@@ -16,7 +16,7 @@ Find more including free tutorials and other courses at [CSSAnimation.rocks](htt
 
 ## More CSS Animation stuff
 
-I have a great [video course on CSS Animation](http://courses.cssanimation.rocks/p/level-up/) you should totally check out. You'll find it a practical guide to building and animating all sorts of parts of a landing page.
+I have a great [video course on CSS Animation](https://www.udemy.com/course/level-up-your-css-animation-skills/) you should totally check out. You'll find it a practical guide to building and animating all sorts of parts of a landing page.
 
 I also send out a free weekly [CSS Animation newsletter](https://cssanimation.rocks/weekly/). Sign up and get an email of cool inspiration in your inbox each week.
 
