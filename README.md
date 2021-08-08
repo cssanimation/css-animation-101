@@ -55,3 +55,13 @@ This book is generated with [Pandoc book template](https://github.com/wikiti/pan
 ## License
 
 [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/)
+
+Animtion is gives life to design, Here are some best resources I can find on the internet.
+
+https://animista.net/play/basic  (My favourite)
+https://www.w3schools.com/css/
+https://www.codecademy.com/learn/learn-css
+https://www.w3schools.com/css/css3_animations.asp
+https://animate.style/
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations
+https://css-tricks.com/almanac/properties/a/animation/
