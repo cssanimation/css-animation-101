@@ -9,16 +9,16 @@ html {
 body {
   color: #444;
   font-family: Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman', serif;
-  font-size: 12px;
+  font-size: 15px;
   line-height: 1.7;
-  padding: 1em;
+  padding: 1.5em;
   margin: auto;
-  max-width: 42em;
+  max-width: 48em;
   background: #fefefe;
 }
 
 a {
-  color: #0645ad;
+  color: blur;
   text-decoration: none;
 }
 
@@ -39,22 +39,22 @@ a:focus {
 }
 
 *::-moz-selection {
-  background: rgba(255, 255, 0, 0.3);
+  background: rgba(255, 255, 0, 0.4);
   color: #000;
 }
 
 *::selection {
-  background: rgba(255, 255, 0, 0.3);
+  background: rgba(255, 255, 0, 0.4);
   color: #000;
 }
 
 a::-moz-selection {
-  background: rgba(255, 255, 0, 0.3);
+  background: rgba(255, 255, 0, 0.4);
   color: #0645ad;
 }
 
 a::selection {
-  background: rgba(255, 255, 0, 0.3);
+  background: rgba(255, 255, 0, 0.4);
   color: #0645ad;
 }
 
